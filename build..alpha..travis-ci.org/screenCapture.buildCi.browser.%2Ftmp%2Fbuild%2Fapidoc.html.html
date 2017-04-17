@@ -1,0 +1,5395 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/grahamjenson/ger#readme">ger (v0.0.99)</a>
+</h1>
+<h4>Good Enough Recommendations (GER) is a collaborative filtering based recommendations engine built to be easy to use and integrate into your application.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger">module ger</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER">
+            function <span class="apidocSignatureSpan">ger.</span>GER
+            <span class="apidocSignatureSpan">(esm)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist">
+            function <span class="apidocSignatureSpan">ger.</span>GER.NamespaceDoestNotExist
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM">
+            function <span class="apidocSignatureSpan">ger.</span>MemESM
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM">
+            function <span class="apidocSignatureSpan">ger.</span>PsqlESM
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex">
+            function <span class="apidocSignatureSpan">ger.</span>knex
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client">
+            function <span class="apidocSignatureSpan">ger.</span>knex.Client
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.</span>GER.NamespaceDoestNotExist.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.</span>GER.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.</span>MemESM.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.</span>PsqlESM.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.</span>knex.Client.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.GER">module ger.GER</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.GER">
+            function <span class="apidocSignatureSpan">ger.</span>GER
+            <span class="apidocSignatureSpan">(esm)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist">
+            function <span class="apidocSignatureSpan">ger.GER.</span>NamespaceDoestNotExist
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.GER.NamespaceDoestNotExist">module ger.GER.NamespaceDoestNotExist</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist.NamespaceDoestNotExist">
+            function <span class="apidocSignatureSpan">ger.GER.</span>NamespaceDoestNotExist
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist.captureStackTrace">
+            function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>captureStackTrace
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist.prepareStackTrace">
+            function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>prepareStackTrace
+            <span class="apidocSignatureSpan">(err, stack)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>stackTraceLimit</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>__super__</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.GER.NamespaceDoestNotExist.prototype">module ger.GER.NamespaceDoestNotExist.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.NamespaceDoestNotExist.prototype.constructor">
+            function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.prototype.</span>constructor
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.GER.prototype">module ger.GER.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.calculate_people_recommendations">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_people_recommendations
+            <span class="apidocSignatureSpan">(similarities, recommendations, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.calculate_similarities_from_person">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_similarities_from_person
+            <span class="apidocSignatureSpan">(namespace, person, people, actions, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.calculate_similarities_from_thing">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_similarities_from_thing
+            <span class="apidocSignatureSpan">(namespace, thing, things, actions, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.calculate_thing_recommendations">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_thing_recommendations
+            <span class="apidocSignatureSpan">(thing, similarities, neighbourhood, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.compact_database">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>compact_database
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.compact_database_to_size">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>compact_database_to_size
+            <span class="apidocSignatureSpan">(namespace, number_of_events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.count_events">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>count_events
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.default_configuration">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>default_configuration
+            <span class="apidocSignatureSpan">(configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.delete_events">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>delete_events
+            <span class="apidocSignatureSpan">(namespace, person, action, thing)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.destroy_namespace">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>destroy_namespace
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.estimate_event_count">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>estimate_event_count
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.event">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>event
+            <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.events">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>events
+            <span class="apidocSignatureSpan">(events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.filter_recommendations">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>filter_recommendations
+            <span class="apidocSignatureSpan">(namespace, person, recommendations, filter_previous_actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.filter_similarities">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>filter_similarities
+            <span class="apidocSignatureSpan">(similarities)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.find_events">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>find_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.generate_recommendations_for_person">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>generate_recommendations_for_person
+            <span class="apidocSignatureSpan">(namespace, person, actions, person_history_count, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.generate_recommendations_for_thing">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>generate_recommendations_for_thing
+            <span class="apidocSignatureSpan">(namespace, thing, actions, thing_history_count, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.history_confidence">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>history_confidence
+            <span class="apidocSignatureSpan">(n_history)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.initialize_namespace">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>initialize_namespace
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.list_namespaces">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>list_namespaces
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.namespace_exists">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>namespace_exists
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.neighbourhood_confidence">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>neighbourhood_confidence
+            <span class="apidocSignatureSpan">(n_values)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.normalize_actions">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>normalize_actions
+            <span class="apidocSignatureSpan">(in_actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.person_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>person_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, person, actions, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.recent_recommendations_by_people">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recent_recommendations_by_people
+            <span class="apidocSignatureSpan">(namespace, actions, people, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.recommendations_confidence">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_confidence
+            <span class="apidocSignatureSpan">(recommendations)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.recommendations_for_person">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_for_person
+            <span class="apidocSignatureSpan">(namespace, person, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.recommendations_for_thing">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_for_thing
+            <span class="apidocSignatureSpan">(namespace, thing, configuration)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.GER.prototype.thing_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.GER.prototype.</span>thing_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, thing, actions, configuration)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.MemESM">module ger.MemESM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.MemESM">
+            function <span class="apidocSignatureSpan">ger.</span>MemESM
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.MemESM.prototype">module ger.MemESM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._cosine_distance">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_cosine_distance
+            <span class="apidocSignatureSpan">(namespace, column1, column2, v1, v2, actions, now, limit, event_decay_rate)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._delete_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_delete_events
+            <span class="apidocSignatureSpan">(namespace, events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._filter_event">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_filter_event
+            <span class="apidocSignatureSpan">(e, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._filter_things_by_previous_action">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_filter_things_by_previous_action
+            <span class="apidocSignatureSpan">(namespace, person, things, action)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._find_event">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_find_event
+            <span class="apidocSignatureSpan">(namespace, person, action, thing)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._find_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_find_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._one_degree_away">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_one_degree_away
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._recent_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_recent_events
+            <span class="apidocSignatureSpan">(namespace, column1, actions, values, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype._similarities">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_similarities
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.add_event">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>add_event
+            <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.add_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>add_events
+            <span class="apidocSignatureSpan">(events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.calculate_similarities_from_person">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>calculate_similarities_from_person
+            <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.calculate_similarities_from_thing">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>calculate_similarities_from_thing
+            <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.compact_people">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>compact_people
+            <span class="apidocSignatureSpan">(namespace, limit, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.compact_things">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>compact_things
+            <span class="apidocSignatureSpan">(namespace, limit, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.count_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>count_events
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.delete_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>delete_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.destroy">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>destroy
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.estimate_event_count">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>estimate_event_count
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.exists">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>exists
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.filter_things_by_previous_actions">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>filter_things_by_previous_actions
+            <span class="apidocSignatureSpan">(namespace, person, things, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.find_events">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>find_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.initialize">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>initialize
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.list_namespaces">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>list_namespaces
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.person_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>person_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, person, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.post_compact">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>post_compact
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.pre_compact">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>pre_compact
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.recent_recommendations_by_people">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>recent_recommendations_by_people
+            <span class="apidocSignatureSpan">(namespace, actions, people, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.MemESM.prototype.thing_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>thing_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, thing, actions, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.PsqlESM">module ger.PsqlESM</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.PsqlESM">
+            function <span class="apidocSignatureSpan">ger.</span>PsqlESM
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.PsqlESM.prototype">module ger.PsqlESM.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype._history">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_history
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, al_values, limit)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype._one_degree_away">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_one_degree_away
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype._recent_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_recent_events
+            <span class="apidocSignatureSpan">(namespace, column1, actions, values, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype._similarities">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_similarities
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype._unexpired_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_unexpired_events
+            <span class="apidocSignatureSpan">(namespace, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.add_event">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_event
+            <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.add_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_events
+            <span class="apidocSignatureSpan">(events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.add_events_to_namespace">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_events_to_namespace
+            <span class="apidocSignatureSpan">(namespace, events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.analyze">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>analyze
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_person">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>calculate_similarities_from_person
+            <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_thing">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>calculate_similarities_from_thing
+            <span class="apidocSignatureSpan">(namespace, thing, things, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.compact_people">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>compact_people
+            <span class="apidocSignatureSpan">(namespace, compact_database_person_action_limit, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.compact_things">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>compact_things
+            <span class="apidocSignatureSpan">(namespace, compact_database_thing_action_limit, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.cosine_distance">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>cosine_distance
+            <span class="apidocSignatureSpan">(namespace, column1, column2, limit, a_values, al_values)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.cosine_query">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>cosine_query
+            <span class="apidocSignatureSpan">(namespace, s1, s2)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.count_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>count_events
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.delete_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>delete_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.destroy">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>destroy
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.estimate_event_count">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>estimate_event_count
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.exists">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>exists
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.filter_things_by_previous_actions">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>filter_things_by_previous_actions
+            <span class="apidocSignatureSpan">(namespace, person, things, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.find_events">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>find_events
+            <span class="apidocSignatureSpan">(namespace, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.get_active_people">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_active_people
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.get_active_things">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_active_things
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.get_cosine_distances">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_cosine_distances
+            <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, limit, event_decay_rate, now)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.initialize">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>initialize
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.list_namespaces">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>list_namespaces
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.person_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>person_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, person, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.post_compact">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>post_compact
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.pre_compact">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>pre_compact
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.recent_recommendations_by_people">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>recent_recommendations_by_people
+            <span class="apidocSignatureSpan">(namespace, actions, people, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.remove_events_till_size">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>remove_events_till_size
+            <span class="apidocSignatureSpan">(namespace, number_of_events)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.thing_neighbourhood">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>thing_neighbourhood
+            <span class="apidocSignatureSpan">(namespace, thing, actions, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.truncate_people_per_action">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_people_per_action
+            <span class="apidocSignatureSpan">(namespace, people, trunc_size, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.truncate_person_actions">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_person_actions
+            <span class="apidocSignatureSpan">(namespace, person, trunc_size, action)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.truncate_thing_actions">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_thing_actions
+            <span class="apidocSignatureSpan">(namespace, thing, trunc_size, action)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.truncate_things_per_action">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_things_per_action
+            <span class="apidocSignatureSpan">(namespace, things, trunc_size, actions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.PsqlESM.prototype.vacuum_analyze">
+            function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>vacuum_analyze
+            <span class="apidocSignatureSpan">(namespace)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.knex">module ger.knex</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.knex">
+            function <span class="apidocSignatureSpan">ger.</span>knex
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client">
+            function <span class="apidocSignatureSpan">ger.knex.</span>Client
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.raw">
+            function <span class="apidocSignatureSpan">ger.knex.</span>raw
+            <span class="apidocSignatureSpan">(sql, bindings)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.knex.Client">module ger.knex.Client</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.Client">
+            function <span class="apidocSignatureSpan">ger.knex.</span>Client
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.super_">
+            function <span class="apidocSignatureSpan">ger.knex.Client.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.ger.knex.Client.prototype">module ger.knex.Client.prototype</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>canCancelQuery</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype._escapeBinding">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>_escapeBinding
+            <span class="apidocSignatureSpan">(val)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype._formatQuery">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>_formatQuery
+            <span class="apidocSignatureSpan">(sql, bindings, timeZone)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.acquireConnection">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>acquireConnection
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.assertCanCancelQuery">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>assertCanCancelQuery
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.cancelQuery">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>cancelQuery
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.columnBuilder">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>columnBuilder
+            <span class="apidocSignatureSpan">(tableBuilder, type, args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.columnCompiler">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>columnCompiler
+            <span class="apidocSignatureSpan">(tableBuilder, columnBuilder)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.database">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>database
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.destroy">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>destroy
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.formatter">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>formatter
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.initializeDriver">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>initializeDriver
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.initializePool">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>initializePool
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.poolDefaults">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>poolDefaults
+            <span class="apidocSignatureSpan">(poolConfig)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.prepBindings">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>prepBindings
+            <span class="apidocSignatureSpan">(bindings)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.query">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>query
+            <span class="apidocSignatureSpan">(connection, obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.queryBuilder">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>queryBuilder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.queryCompiler">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>queryCompiler
+            <span class="apidocSignatureSpan">(builder)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.raw">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>raw
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.releaseConnection">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>releaseConnection
+            <span class="apidocSignatureSpan">(connection)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.runner">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>runner
+            <span class="apidocSignatureSpan">(connection)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.schemaBuilder">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>schemaBuilder
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.schemaCompiler">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>schemaCompiler
+            <span class="apidocSignatureSpan">(builder)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.stream">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>stream
+            <span class="apidocSignatureSpan">(connection, obj, _stream, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.tableBuilder">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>tableBuilder
+            <span class="apidocSignatureSpan">(type, tableName, fn)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.tableCompiler">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>tableCompiler
+            <span class="apidocSignatureSpan">(tableBuilder)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.toString">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.transaction">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>transaction
+            <span class="apidocSignatureSpan">(container, config, outerTx)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.validateConnection">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>validateConnection
+            <span class="apidocSignatureSpan">(connection)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ger.knex.Client.prototype.wrapIdentifier">
+            function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>wrapIdentifier
+            <span class="apidocSignatureSpan">(value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger" id="apidoc.module.ger">module ger</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER" id="apidoc.element.ger.GER">
+        function <span class="apidocSignatureSpan">ger.</span>GER
+        <span class="apidocSignatureSpan">(esm)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GER(esm) {
+  this.esm = esm;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var g = require('ger')
+```
+
+Initialize an in memory Event Store Manager (ESM) and create a Good Enough Recommender (GER):
+
+```javascript
+var esm = new g.MemESM()
+var ger = new g.<span class="apidocCodeKeywordSpan">GER</span>(esm);
+```
+
+The next step is to initialize a namespace, e.g. `movies`. *A namespace is a bucket of events that will not interfere with other
+ buckets*.
+
+```javascript
+ger.initialize_namespace('movies')
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist" id="apidoc.element.ger.GER.NamespaceDoestNotExist">
+        function <span class="apidocSignatureSpan">ger.</span>GER.NamespaceDoestNotExist
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NamespaceDoestNotExist() {
+  this.name = "NamespaceDoestNotExist";
+  this.message = "namespace does not exist";
+  Error.captureStackTrace(this, NamespaceDoestNotExist);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM" id="apidoc.element.ger.MemESM">
+        function <span class="apidocSignatureSpan">ger.</span>MemESM
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BasicInMemoryESM(options) {
+  if (options == null) {
+    options = {};
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var g = require('ger')
+```
+
+Initialize an in memory Event Store Manager (ESM) and create a Good Enough Recommender (GER):
+
+```javascript
+var esm = new g.<span class="apidocCodeKeywordSpan">MemESM</span>()
+var ger = new g.GER(esm);
+```
+
+The next step is to initialize a namespace, e.g. `movies`. *A namespace is a bucket of events that will not interfere with other
+ buckets*.
+
+```javascript
+ger.initialize_namespace('movies')
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM" id="apidoc.element.ger.PsqlESM">
+        function <span class="apidocSignatureSpan">ger.</span>PsqlESM
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PSQLEventStoreManager(options) {
+  if (options == null) {
+    options = {};
+  }
+  this._knex = options.knex;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex" id="apidoc.element.ger.knex">
+        function <span class="apidocSignatureSpan">ger.</span>knex
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Knex(config) {
+  if (typeof config === 'string') {
+    return new Knex((0, _assign3.default)((0, _parseConnection2.default)(config), arguments[2]));
+  }
+  var Dialect = void 0;
+  if (arguments.length === 0 || !config.client &amp;&amp; !config.dialect) {
+    Dialect = _client2.default;
+  } else if (typeof config.client === 'function' &amp;&amp; config.client.prototype instanceof _client2.default) {
+    Dialect = config.client;
+  } else {
+    var clientName = config.client || config.dialect;
+    Dialect = require('./dialects/' + (aliases[clientName] || clientName) + '/index.js');
+  }
+  if (typeof config.connection === 'string') {
+    config = (0, _assign3.default)({}, config, { connection: (0, _parseConnection2.default)(config.connection).connection });
+  }
+  return (0, _makeKnex2.default)(new Dialect(config));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client" id="apidoc.element.ger.knex.Client">
+        function <span class="apidocSignatureSpan">ger.</span>knex.Client
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Client() {
+  var config = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  this.config = config;
+  this.connectionSettings = (0, _cloneDeep3.default)(config.connection || {});
+  if (this.driverName &amp;&amp; config.connection) {
+    this.initializeDriver();
+    if (!config.pool || config.pool &amp;&amp; config.pool.max !== 0) {
+      this.__cid = clientId();
+      this.initializePool(config);
+    }
+  }
+  this.valueForUndefined = this.raw('DEFAULT');
+  if (config.useNullAsDefault) {
+    this.valueForUndefined = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.GER" id="apidoc.module.ger.GER">module ger.GER</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.GER" id="apidoc.element.ger.GER.GER">
+        function <span class="apidocSignatureSpan">ger.</span>GER
+        <span class="apidocSignatureSpan">(esm)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function GER(esm) {
+  this.esm = esm;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var g = require('ger')
+```
+
+Initialize an in memory Event Store Manager (ESM) and create a Good Enough Recommender (GER):
+
+```javascript
+var esm = new g.MemESM()
+var ger = new g.<span class="apidocCodeKeywordSpan">GER</span>(esm);
+```
+
+The next step is to initialize a namespace, e.g. `movies`. *A namespace is a bucket of events that will not interfere with other
+ buckets*.
+
+```javascript
+ger.initialize_namespace('movies')
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist" id="apidoc.element.ger.GER.NamespaceDoestNotExist">
+        function <span class="apidocSignatureSpan">ger.GER.</span>NamespaceDoestNotExist
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NamespaceDoestNotExist() {
+  this.name = "NamespaceDoestNotExist";
+  this.message = "namespace does not exist";
+  Error.captureStackTrace(this, NamespaceDoestNotExist);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.GER.NamespaceDoestNotExist" id="apidoc.module.ger.GER.NamespaceDoestNotExist">module ger.GER.NamespaceDoestNotExist</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist.NamespaceDoestNotExist" id="apidoc.element.ger.GER.NamespaceDoestNotExist.NamespaceDoestNotExist">
+        function <span class="apidocSignatureSpan">ger.GER.</span>NamespaceDoestNotExist
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NamespaceDoestNotExist() {
+  this.name = "NamespaceDoestNotExist";
+  this.message = "namespace does not exist";
+  Error.captureStackTrace(this, NamespaceDoestNotExist);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist.captureStackTrace" id="apidoc.element.ger.GER.NamespaceDoestNotExist.captureStackTrace">
+        function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>captureStackTrace
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function captureStackTrace() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist.prepareStackTrace" id="apidoc.element.ger.GER.NamespaceDoestNotExist.prepareStackTrace">
+        function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.</span>prepareStackTrace
+        <span class="apidocSignatureSpan">(err, stack)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prepareStackTrace = function (err, stack) {
+  var frame, frames, getSourceMapping;
+  getSourceMapping = function(filename, line, column) {
+    var answer, sourceMap;
+    sourceMap = getSourceMap(filename);
+    if (sourceMap) {
+      answer = sourceMap.sourceLocation([line - 1, column - 1]);
+    }
+    if (answer) {
+      return [answer[0] + 1, answer[1] + 1];
+    } else {
+      return null;
+    }
+  };
+  frames = (function() {
+    var j, len1, results;
+    results = [];
+    for (j = 0, len1 = stack.length; j &lt; len1; j++) {
+      frame = stack[j];
+      if (frame.getFunction() === exports.run) {
+        break;
+      }
+      results.push("  at " + (formatSourcePosition(frame, getSourceMapping)));
+    }
+    return results;
+  })();
+  return (err.toString()) + "\n" + (frames.join('\n')) + "\n";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.GER.NamespaceDoestNotExist.prototype" id="apidoc.module.ger.GER.NamespaceDoestNotExist.prototype">module ger.GER.NamespaceDoestNotExist.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.NamespaceDoestNotExist.prototype.constructor" id="apidoc.element.ger.GER.NamespaceDoestNotExist.prototype.constructor">
+        function <span class="apidocSignatureSpan">ger.GER.NamespaceDoestNotExist.prototype.</span>constructor
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function NamespaceDoestNotExist() {
+  this.name = "NamespaceDoestNotExist";
+  this.message = "namespace does not exist";
+  Error.captureStackTrace(this, NamespaceDoestNotExist);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.GER.prototype" id="apidoc.module.ger.GER.prototype">module ger.GER.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.calculate_people_recommendations" id="apidoc.element.ger.GER.prototype.calculate_people_recommendations">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_people_recommendations
+        <span class="apidocSignatureSpan">(similarities, recommendations, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_people_recommendations = function (similarities, recommendations, configuration) {
+  var i, len, rec, thing, thing_group;
+  thing_group = {};
+  for (i = 0, len = recommendations.length; i &lt; len; i++) {
+    rec = recommendations[i];
+    if (thing_group[rec.thing] === void 0) {
+      thing_group[rec.thing] = {
+        thing: rec.thing,
+        weight: 0,
+        last_actioned_at: rec.last_actioned_at,
+        last_expires_at: rec.last_expires_at,
+        people: []
+      };
+    }
+    thing_group[rec.thing].last_actioned_at = moment.max(moment(thing_group[rec.thing].last_actioned_at), moment(rec.last_actioned_at
+)).format();
+    thing_group[rec.thing].last_expires_at = moment.max(moment(thing_group[rec.thing].last_expires_at), moment(rec.last_expires_at
+)).format();
+    thing_group[rec.thing].weight += similarities[rec.person];
+    thing_group[rec.thing].people.push(rec.person);
+  }
+  recommendations = [];
+  for (thing in thing_group) {
+    rec = thing_group[thing];
+    recommendations.push(rec);
+  }
+  recommendations = recommendations.sort(function(x, y) {
+    return y.weight - x.weight;
+  });
+  return recommendations;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.calculate_similarities_from_person" id="apidoc.element.ger.GER.prototype.calculate_similarities_from_person">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_similarities_from_person
+        <span class="apidocSignatureSpan">(namespace, person, people, actions, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_person = function (namespace, person, people, actions, configuration) {
+  return this.esm.calculate_similarities_from_person(namespace, person, people, actions, _.clone(configuration)).then((function(
+_this) {
+    return function(similarities) {
+      similarities[person] = 1;
+      return similarities;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.calculate_similarities_from_thing" id="apidoc.element.ger.GER.prototype.calculate_similarities_from_thing">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_similarities_from_thing
+        <span class="apidocSignatureSpan">(namespace, thing, things, actions, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_thing = function (namespace, thing, things, actions, configuration) {
+  return this.esm.calculate_similarities_from_thing(namespace, thing, things, actions, _.clone(configuration));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.calculate_thing_recommendations" id="apidoc.element.ger.GER.prototype.calculate_thing_recommendations">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>calculate_thing_recommendations
+        <span class="apidocSignatureSpan">(thing, similarities, neighbourhood, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_thing_recommendations = function (thing, similarities, neighbourhood, configuration) {
+  var i, len, rec, recommendations;
+  recommendations = [];
+  for (i = 0, len = neighbourhood.length; i &lt; len; i++) {
+    rec = neighbourhood[i];
+    recommendations.push({
+      thing: rec.thing,
+      weight: rec.people.length * similarities[rec.thing],
+      last_actioned_at: rec.last_actioned_at,
+      last_expires_at: rec.last_expires_at,
+      people: rec.people
+    });
+  }
+  recommendations = recommendations.sort(function(x, y) {
+    return y.weight - x.weight;
+  });
+  return recommendations;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.compact_database" id="apidoc.element.ger.GER.prototype.compact_database">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>compact_database
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_database = function (namespace, options) {
+  if (options == null) {
+    options = {};
+  }
+  options = _.defaults(options, {
+    compact_database_person_action_limit: 1500,
+    compact_database_thing_action_limit: 1500,
+    actions: []
+  });
+  return this.esm.pre_compact(namespace).then((function(_this) {
+    return function() {
+      return _this.esm.compact_people(namespace, options.compact_database_person_action_limit, options.actions);
+    };
+  })(this)).then((function(_this) {
+    return function() {
+      return _this.esm.compact_things(namespace, options.compact_database_thing_action_limit, options.actions);
+    };
+  })(this)).then((function(_this) {
+    return function() {
+      return _this.esm.post_compact(namespace);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.compact_database_to_size" id="apidoc.element.ger.GER.prototype.compact_database_to_size">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>compact_database_to_size
+        <span class="apidocSignatureSpan">(namespace, number_of_events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_database_to_size = function (namespace, number_of_events) {
+  return this.esm.remove_events_till_size(namespace, number_of_events);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.count_events" id="apidoc.element.ger.GER.prototype.count_events">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>count_events
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">count_events = function (namespace) {
+  return this.esm.count_events(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.default_configuration" id="apidoc.element.ger.GER.prototype.default_configuration">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>default_configuration
+        <span class="apidocSignatureSpan">(configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default_configuration = function (configuration) {
+  return _.defaults(configuration, {
+    minimum_history_required: 1,
+    neighbourhood_search_size: 100,
+    similarity_search_size: 100,
+    event_decay_rate: 1,
+    neighbourhood_size: 25,
+    recommendations_per_neighbour: 5,
+    filter_previous_actions: [],
+    time_until_expiry: 0,
+    actions: {},
+    current_datetime: new Date()
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.delete_events" id="apidoc.element.ger.GER.prototype.delete_events">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>delete_events
+        <span class="apidocSignatureSpan">(namespace, person, action, thing)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete_events = function (namespace, person, action, thing) {
+  return this.esm.delete_events(namespace, person, action, thing);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.destroy_namespace" id="apidoc.element.ger.GER.prototype.destroy_namespace">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>destroy_namespace
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy_namespace = function (namespace) {
+  return this.esm.destroy(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.estimate_event_count" id="apidoc.element.ger.GER.prototype.estimate_event_count">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>estimate_event_count
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">estimate_event_count = function (namespace) {
+  return this.esm.estimate_event_count(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.event" id="apidoc.element.ger.GER.prototype.event">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>event
+        <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">event = function (namespace, person, action, thing, dates) {
+  if (dates == null) {
+    dates = {};
+  }
+  return this.esm.add_event(namespace, person, action, thing, dates).then(function() {
+    return {
+      person: person,
+      action: action,
+      thing: thing
+    };
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.events" id="apidoc.element.ger.GER.prototype.events">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>events
+        <span class="apidocSignatureSpan">(events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">events = function (events) {
+  return this.esm.add_events(events).then(function() {
+    return events;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+ger.initialize_namespace('movies')
+```
+
+Next add events to the namespace. *An event is a triple (person, action, thing)* e.g. `bob` `likes` `xmen`.
+
+```javascript
+ger.<span class="apidocCodeKeywordSpan">events</span>([{
+  namespace: 'movies',
+  person: 'bob',
+  action: 'likes',
+  thing: 'xmen',
+  expires_at: '2020-06-06'
+}])
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.filter_recommendations" id="apidoc.element.ger.GER.prototype.filter_recommendations">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>filter_recommendations
+        <span class="apidocSignatureSpan">(namespace, person, recommendations, filter_previous_actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter_recommendations = function (namespace, person, recommendations, filter_previous_actions) {
+  var recommended_things, x;
+  recommended_things = _.uniq((function() {
+    var i, len, results;
+    results = [];
+    for (i = 0, len = recommendations.length; i &lt; len; i++) {
+      x = recommendations[i];
+      results.push(x.thing);
+    }
+    return results;
+  })());
+  return this.esm.filter_things_by_previous_actions(namespace, person, recommended_things, filter_previous_actions).then(function
+(filtered_recommendations) {
+    var filtered_recs, i, len, rec, ref;
+    filtered_recs = [];
+    for (i = 0, len = recommendations.length; i &lt; len; i++) {
+      rec = recommendations[i];
+      if (ref = rec.thing, indexOf.call(filtered_recommendations, ref) &gt;= 0) {
+        filtered_recs.push(rec);
+      }
+    }
+    return filtered_recs;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.filter_similarities" id="apidoc.element.ger.GER.prototype.filter_similarities">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>filter_similarities
+        <span class="apidocSignatureSpan">(similarities)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter_similarities = function (similarities) {
+  var ns, pt, weight;
+  ns = {};
+  for (pt in similarities) {
+    weight = similarities[pt];
+    if (weight !== 0) {
+      ns[pt] = weight;
+    }
+  }
+  return ns;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.find_events" id="apidoc.element.ger.GER.prototype.find_events">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>find_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find_events = function (namespace, options) {
+  if (options == null) {
+    options = {};
+  }
+  return this.esm.find_events(namespace, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.generate_recommendations_for_person" id="apidoc.element.ger.GER.prototype.generate_recommendations_for_person">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>generate_recommendations_for_person
+        <span class="apidocSignatureSpan">(namespace, person, actions, person_history_count, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate_recommendations_for_person = function (namespace, person, actions, person_history_count, configuration) {
+  return this.person_neighbourhood(namespace, person, actions, configuration).then((function(_this) {
+    return function(people) {
+      return bb.all([people, _this.calculate_similarities_from_person(namespace, person, people, actions, _.clone(configuration)),
+_this.recent_recommendations_by_people(namespace, actions, people.concat(person), _.clone(configuration))]);
+    };
+  })(this)).spread((function(_this) {
+    return function(neighbourhood, similarities, recommendations) {
+      return bb.all([neighbourhood, similarities, _this.filter_recommendations(namespace, person, recommendations, configuration
+.filter_previous_actions)]);
+    };
+  })(this)).spread((function(_this) {
+    return function(neighbourhood, similarities, recommendations) {
+      var history_confidence, neighbourhood_confidence, recommendations_confidence, recommendations_object;
+      recommendations_object = {};
+      recommendations_object.recommendations = _this.calculate_people_recommendations(similarities, recommendations, configuration
+);
+      recommendations_object.neighbourhood = _this.filter_similarities(similarities);
+      neighbourhood_confidence = _this.neighbourhood_confidence(neighbourhood.length);
+      history_confidence = _this.history_confidence(person_history_count);
+      recommendations_confidence = _this.recommendations_confidence(recommendations_object.recommendations);
+      recommendations_object.confidence = neighbourhood_confidence * history_confidence * recommendations_confidence;
+      return recommendations_object;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.generate_recommendations_for_thing" id="apidoc.element.ger.GER.prototype.generate_recommendations_for_thing">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>generate_recommendations_for_thing
+        <span class="apidocSignatureSpan">(namespace, thing, actions, thing_history_count, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">generate_recommendations_for_thing = function (namespace, thing, actions, thing_history_count, configuration) {
+  return this.thing_neighbourhood(namespace, thing, actions, configuration).then((function(_this) {
+    return function(thing_neighbours) {
+      var nei, things;
+      things = (function() {
+        var i, len, results;
+        results = [];
+        for (i = 0, len = thing_neighbours.length; i &lt; len; i++) {
+          nei = thing_neighbours[i];
+          results.push(nei.thing);
+        }
+        return results;
+      })();
+      return bb.all([thing_neighbours, _this.calculate_similarities_from_thing(namespace, thing, things, actions, _.clone(configuration
+))]);
+    };
+  })(this)).spread((function(_this) {
+    return function(neighbourhood, similarities) {
+      var history_confidence, neighbourhood_confidence, recommendations_confidence, recommendations_object;
+      recommendations_object = {};
+      recommendations_object.recommendations = _this.calculate_thing_recommendations(thing, similarities, neighbourhood, configuration
+);
+      recommendations_object.neighbourhood = _this.filter_similarities(similarities);
+      neighbourhood_confidence = _this.neighbourhood_confidence(neighbourhood.length);
+      history_confidence = _this.history_confidence(thing_history_count);
+      recommendations_confidence = _this.recommendations_confidence(recommendations_object.recommendations);
+      recommendations_object.confidence = neighbourhood_confidence * history_confidence * recommendations_confidence;
+      return recommendations_object;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.history_confidence" id="apidoc.element.ger.GER.prototype.history_confidence">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>history_confidence
+        <span class="apidocSignatureSpan">(n_history)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">history_confidence = function (n_history) {
+  var hc;
+  hc = 1.0 - Math.pow(Math.E, (-n_history) / 35);
+  return hc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.initialize_namespace" id="apidoc.element.ger.GER.prototype.initialize_namespace">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>initialize_namespace
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize_namespace = function (namespace) {
+  return this.esm.initialize(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var esm = new g.MemESM()
+var ger = new g.GER(esm);
+```
+
+The next step is to initialize a namespace, e.g. `movies`. *A namespace is a bucket of events that will not interfere with other
+ buckets*.
+
+```javascript
+ger.<span class="apidocCodeKeywordSpan">initialize_namespace</span>('movies')
+```
+
+Next add events to the namespace. *An event is a triple (person, action, thing)* e.g. `bob` `likes` `xmen`.
+
+```javascript
+ger.events([{
+namespace: 'movies',
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.list_namespaces" id="apidoc.element.ger.GER.prototype.list_namespaces">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>list_namespaces
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list_namespaces = function () {
+  return this.esm.list_namespaces();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.namespace_exists" id="apidoc.element.ger.GER.prototype.namespace_exists">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>namespace_exists
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">namespace_exists = function (namespace) {
+  return this.esm.exists(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.neighbourhood_confidence" id="apidoc.element.ger.GER.prototype.neighbourhood_confidence">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>neighbourhood_confidence
+        <span class="apidocSignatureSpan">(n_values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">neighbourhood_confidence = function (n_values) {
+  var pc;
+  pc = 1.0 - Math.pow(Math.E, (-n_values) / 15);
+  return pc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.normalize_actions" id="apidoc.element.ger.GER.prototype.normalize_actions">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>normalize_actions
+        <span class="apidocSignatureSpan">(in_actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">normalize_actions = function (in_actions) {
+  var action, actions, total_action_weight, weight;
+  total_action_weight = 0;
+  for (action in in_actions) {
+    weight = in_actions[action];
+    if (weight &lt;= 0) {
+      continue;
+    }
+    total_action_weight += weight;
+  }
+  actions = {};
+  for (action in in_actions) {
+    weight = in_actions[action];
+    if (weight &lt;= 0) {
+      continue;
+    }
+    actions[action] = weight / total_action_weight;
+  }
+  return actions;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.person_neighbourhood" id="apidoc.element.ger.GER.prototype.person_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>person_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, person, actions, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">person_neighbourhood = function (namespace, person, actions, configuration) {
+  return this.esm.person_neighbourhood(namespace, person, Object.keys(actions), _.clone(configuration));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.recent_recommendations_by_people" id="apidoc.element.ger.GER.prototype.recent_recommendations_by_people">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recent_recommendations_by_people
+        <span class="apidocSignatureSpan">(namespace, actions, people, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recent_recommendations_by_people = function (namespace, actions, people, configuration) {
+  return this.esm.recent_recommendations_by_people(namespace, Object.keys(actions), people, _.clone(configuration));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.recommendations_confidence" id="apidoc.element.ger.GER.prototype.recommendations_confidence">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_confidence
+        <span class="apidocSignatureSpan">(recommendations)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recommendations_confidence = function (recommendations) {
+  var i, len, mean_weight, r, tc, total_weight;
+  if (recommendations.length === 0) {
+    return 0;
+  }
+  total_weight = 0;
+  for (i = 0, len = recommendations.length; i &lt; len; i++) {
+    r = recommendations[i];
+    total_weight += r.weight;
+  }
+  mean_weight = total_weight / recommendations.length;
+  tc = 1.0 - Math.pow(Math.E, (-mean_weight) / 2);
+  return tc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.recommendations_for_person" id="apidoc.element.ger.GER.prototype.recommendations_for_person">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_for_person
+        <span class="apidocSignatureSpan">(namespace, person, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recommendations_for_person = function (namespace, person, configuration) {
+  var actions;
+  if (configuration == null) {
+    configuration = {};
+  }
+  configuration = this.default_configuration(configuration);
+  actions = configuration.actions;
+  return this.find_events(namespace, {
+    actions: Object.keys(actions),
+    person: person,
+    current_datetime: configuration.current_datetime,
+    size: 100
+  }).then((function(_this) {
+    return function(events) {
+      if (events.length &lt; configuration.minimum_history_required) {
+        return {
+          recommendations: [],
+          confidence: 0
+        };
+      }
+      return _this.generate_recommendations_for_person(namespace, person, actions, events.length, configuration);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+2. a recommendation ALWAYS expires, e.g. `bob` `likes` `xmen` occurred 15 years ago, so maybe he wouldn't recommend `xmen`
+now
+
+So GER has the rule: *If an event has an expiry date it is treated as a recommendation until it expires*.
+
+GER can generate recommendations for a person, e.g. *what would alice like?*
+
+```
+ger.<span class="apidocCodeKeywordSpan">recommendations_for_person</span>('movies', 'alice', {actions: {likes
+: 1}
+```
+
+and recommendations for a thing, e.g. *what would a person who likes xmen like?*
+
+```
+ger.recommendations_for_thing('movies', 'xmen', {actions: {likes: 1}})
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.recommendations_for_thing" id="apidoc.element.ger.GER.prototype.recommendations_for_thing">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>recommendations_for_thing
+        <span class="apidocSignatureSpan">(namespace, thing, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recommendations_for_thing = function (namespace, thing, configuration) {
+  var actions;
+  if (configuration == null) {
+    configuration = {};
+  }
+  configuration = this.default_configuration(configuration);
+  actions = configuration.actions;
+  return this.find_events(namespace, {
+    actions: Object.keys(actions),
+    thing: thing,
+    current_datetime: configuration.current_datetime,
+    size: 100
+  }).then((function(_this) {
+    return function(events) {
+      if (events.length &lt; configuration.minimum_history_required) {
+        return {
+          recommendations: [],
+          confidence: 0
+        };
+      }
+      return _this.generate_recommendations_for_thing(namespace, thing, actions, events.length, configuration);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+ger.recommendations_for_person('movies', 'alice', {actions: {likes: 1}
+```
+
+and recommendations for a thing, e.g. *what would a person who likes xmen like?*
+
+```
+ger.<span class="apidocCodeKeywordSpan">recommendations_for_thing</span>('movies', 'xmen', {actions: {likes:
+1}})
+```
+
+
+Lets put it all together:
+
+
+```javascript
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.GER.prototype.thing_neighbourhood" id="apidoc.element.ger.GER.prototype.thing_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.GER.prototype.</span>thing_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, thing, actions, configuration)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thing_neighbourhood = function (namespace, thing, actions, configuration) {
+  return this.esm.thing_neighbourhood(namespace, thing, Object.keys(actions), _.clone(configuration));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.MemESM" id="apidoc.module.ger.MemESM">module ger.MemESM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.MemESM" id="apidoc.element.ger.MemESM.MemESM">
+        function <span class="apidocSignatureSpan">ger.</span>MemESM
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function BasicInMemoryESM(options) {
+  if (options == null) {
+    options = {};
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+var g = require('ger')
+```
+
+Initialize an in memory Event Store Manager (ESM) and create a Good Enough Recommender (GER):
+
+```javascript
+var esm = new g.<span class="apidocCodeKeywordSpan">MemESM</span>()
+var ger = new g.GER(esm);
+```
+
+The next step is to initialize a namespace, e.g. `movies`. *A namespace is a bucket of events that will not interfere with other
+ buckets*.
+
+```javascript
+ger.initialize_namespace('movies')
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.MemESM.prototype" id="apidoc.module.ger.MemESM.prototype">module ger.MemESM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._cosine_distance" id="apidoc.element.ger.MemESM.prototype._cosine_distance">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_cosine_distance
+        <span class="apidocSignatureSpan">(namespace, column1, column2, v1, v2, actions, now, limit, event_decay_rate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_cosine_distance = function (namespace, column1, column2, v1, v2, actions, now, limit, event_decay_rate) {
+  var cosinse_similarity, days, denominator_1, denominator_2, e, i, j, len, len1, n_weight, numerator, p1_values, p2_values, ref
+, ref1, search1, search2, value, weight;
+  search1 = {
+    current_datetime: now
+  };
+  search2 = {
+    current_datetime: now
+  };
+  search1[column1] = v1;
+  search2[column1] = v2;
+  search1.actions = Object.keys(actions);
+  search2.actions = Object.keys(actions);
+  p1_values = {};
+  ref = this._find_events(namespace, search1).slice(0, limit);
+  for (i = 0, len = ref.length; i &lt; len; i++) {
+    e = ref[i];
+    weight = actions[e.action];
+    days = Math.round(moment.duration(moment(now).diff(e.created_at)).asDays());
+    n_weight = weight * Math.pow(event_decay_rate, -days);
+    p1_values[e[column2]] = n_weight;
+  }
+  p2_values = {};
+  ref1 = this._find_events(namespace, search2).slice(0, limit);
+  for (j = 0, len1 = ref1.length; j &lt; len1; j++) {
+    e = ref1[j];
+    weight = actions[e.action];
+    days = Math.round(moment.duration(moment(now).diff(e.created_at)).asDays());
+    n_weight = weight * Math.pow(event_decay_rate, -days);
+    p2_values[e[column2]] = n_weight;
+  }
+  numerator = 0;
+  for (value in p1_values) {
+    weight = p1_values[value];
+    if (p2_values[value]) {
+      numerator += weight * p2_values[value];
+    }
+  }
+  denominator_1 = 0;
+  for (value in p1_values) {
+    weight = p1_values[value];
+    denominator_1 += Math.pow(weight, 2);
+  }
+  denominator_2 = 0;
+  for (value in p2_values) {
+    weight = p2_values[value];
+    denominator_2 += Math.pow(weight, 2);
+  }
+  cosinse_similarity = numerator / (Math.sqrt(denominator_1) * Math.sqrt(denominator_2));
+  return cosinse_similarity;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._delete_events" id="apidoc.element.ger.MemESM.prototype._delete_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_delete_events
+        <span class="apidocSignatureSpan">(namespace, events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_delete_events = function (namespace, events) {
+  var e, i, len, results;
+  event_store[namespace] = event_store[namespace].filter(function(x) {
+    return indexOf.call(events, x) &lt; 0;
+  });
+  results = [];
+  for (i = 0, len = events.length; i &lt; len; i++) {
+    e = events[i];
+    delete person_action_store[namespace][e.person][e.action][e.thing];
+    results.push(delete thing_action_store[namespace][e.thing][e.action][e.person]);
+  }
+  return results;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._filter_event" id="apidoc.element.ger.MemESM.prototype._filter_event">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_filter_event
+        <span class="apidocSignatureSpan">(e, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_filter_event = function (e, options) {
+  var add;
+  if (!e) {
+    return false;
+  }
+  add = true;
+  if (moment(options.current_datetime).isBefore(e.created_at)) {
+    add = false;
+  }
+  if (options.expires_after &amp;&amp; (!e.expires_at || moment(e.expires_at).isBefore(options.expires_after))) {
+    add = false;
+  }
+  if (options.people) {
+    if (!_.contains(options.people, e.person)) {
+      add = false;
+    }
+  }
+  if (options.person) {
+    if (options.person !== e.person) {
+      add = false;
+    }
+  }
+  if (options.actions) {
+    if (!_.contains(options.actions, e.action)) {
+      add = false;
+    }
+  }
+  if (options.action) {
+    if (options.action !== e.action) {
+      add = false;
+    }
+  }
+  if (options.things) {
+    if (!_.contains(options.things, e.thing)) {
+      add = false;
+    }
+  }
+  if (options.thing) {
+    if (options.thing !== e.thing) {
+      add = false;
+    }
+  }
+  return add;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._filter_things_by_previous_action" id="apidoc.element.ger.MemESM.prototype._filter_things_by_previous_action">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_filter_things_by_previous_action
+        <span class="apidocSignatureSpan">(namespace, person, things, action)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_filter_things_by_previous_action = function (namespace, person, things, action) {
+  return things.filter((function(_this) {
+    return function(t) {
+      return !person_action_store[namespace][person] || !person_action_store[namespace][person][action] || !person_action_store[
+namespace][person][action][t];
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._find_event" id="apidoc.element.ger.MemESM.prototype._find_event">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_find_event
+        <span class="apidocSignatureSpan">(namespace, person, action, thing)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_find_event = function (namespace, person, action, thing) {
+  if (!person_action_store[namespace][person]) {
+    return null;
+  }
+  if (!person_action_store[namespace][person][action]) {
+    return null;
+  }
+  if (!person_action_store[namespace][person][action][thing]) {
+    return null;
+  }
+  return person_action_store[namespace][person][action][thing];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._find_events" id="apidoc.element.ger.MemESM.prototype._find_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_find_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_find_events = function (namespace, options) {
+  var at, ats, e, events, ref, ref1, ref2, t, thth;
+  if (options == null) {
+    options = {};
+  }
+  options = _.defaults(options, {
+    size: 50,
+    page: 0,
+    current_datetime: new Date()
+  });
+  if (options.time_until_expiry !== void 0) {
+    options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  }
+  events = [];
+  if (options.person &amp;&amp; options.action &amp;&amp; options.thing) {
+    e = (ref = person_action_store[namespace]) != null ? (ref1 = ref[options.person]) != null ? (ref2 = ref1[options.action]) !=
+null ? ref2[options.thing] : void 0 : void 0 : void 0;
+    events = [e];
+  } else if (options.person &amp;&amp; options.action) {
+    events = (function() {
+      var ref3, ref4, ref5, results;
+      ref5 = (ref3 = person_action_store[namespace]) != null ? (ref4 = ref3[options.person]) != null ? ref4[options.action] : void
+ 0 : void 0;
+      results = [];
+      for (t in ref5) {
+        e = ref5[t];
+        results.push(e);
+      }
+      return results;
+    })();
+  } else if (options.thing &amp;&amp; options.action) {
+    events = (function() {
+      var ref3, ref4, ref5, results;
+      ref5 = (ref3 = thing_action_store[namespace]) != null ? (ref4 = ref3[options.thing]) != null ? ref4[options.action] : void
+ 0 : void 0;
+      results = [];
+      for (t in ref5) {
+        e = ref5[t];
+        results.push(e);
+      }
+      return results;
+    })();
+  } else if (options.person) {
+    events = (function() {
+      var ref3, ref4, results;
+      ref4 = (ref3 = person_action_store[namespace]) != null ? ref3[options.person] : void 0;
+      results = [];
+      for (at in ref4) {
+        ats = ref4[at];
+        results.push((function() {
+          var results1;
+          results1 = [];
+          for (t in ats) {
+            e = ats[t];
+            results1.push(e);
+          }
+          return results1;
+        })());
+      }
+      return results;
+    })();
+  } else if (options.thing) {
+    events = (function() {
+      var ref3, ref4, results;
+      ref4 = (ref3 = thing_action_store[namespace]) != null ? ref3[options.thing] : void 0;
+      results = [];
+      for (at in ref4) {
+        ats = ref4[at];
+        results.push((function() {
+          var results1;
+          results1 = [];
+          for (t in ats) {
+            e = ats[t];
+            results1.push(e);
+          }
+          return results1;
+        })());
+      }
+      return results;
+    })();
+  } else if (options.people) {
+    events = (function() {
+      var i, len, ref3, results;
+      ref3 = options.people;
+      results = [];
+      for (i = 0, len = ref3.length; i &lt; len; i++) {
+        thth = ref3[i];
+        results.push((function() {
+          var ref4, ref5, results1;
+          ref5 = (ref4 = person_action_store[namespace]) != null ? ref4[thth] : void 0;
+          results1 = [];
+          for (at in ref5) {
+            ats = ref5[at];
+            results1.push((function() {
+              var results2;
+              results2 = [];
+              for (t in ats) {
+                e = ats[t];
+                results2.push(e);
+              }
+              return results2;
+            })());
+          }
+          return results1;
+        })());
+      }
+      return results;
+    })();
+  } else if (options.things) {
+    events = (function() {
+      var i, len, ref3, results;
+      ref3 = options.things;
+      results = [];
+      for (i = 0, len = ref3.length; i &lt; len; i++) {
+        thth = ref3[i];
+        results.push((function() {
+          var ref4, ref5, results1;
+          ref5 = (ref4 = thing_action_store[namespace]) != null ? ref4[thth] : void 0;
+          results1 = [];
+          for (at in ref5) {
+            ats = ref5[at];
+            results1.push((function() {
+              var results2;
+              results2 = [];
+              for (t in ats) {
+                e = ats[t];
+                results2.push(e);
+              }
+              return results2;
+            })());
+          }
+          return results1;
+        })());
+      }
+      return results;
+    })();
+  } else {
+    event ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._one_degree_away" id="apidoc.element.ger.MemESM.prototype._one_degree_away">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_one_degree_away
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_one_degree_away = function (namespace, column1, column2, value, options) {
+  var i, j, len, len1, obj, ref, ref1, ret, search_hash, search_hash_1, search_hash_2, x, y;
+  search_hash = {
+    current_datetime: options.current_datetime,
+    actions: options.actions,
+    size: options.neighbourhood_search_size
+  };
+  search_hash_1 = _.clone(search_hash);
+  search_hash_1[column1] = value;
+  ret = {};
+  ref = this._find_events(namespace, search_hash_1);
+  for (i = 0, len = ref.length; i &lt; len; i++) {
+    x = ref[i];
+    search_hash_2 = _.clone(search_hash);
+    search_hash_2[column2] = x[column2];
+    ref1 = this._find_events(namespace, search_hash_2);
+    for (j = 0, len1 = ref1.length; j &lt; len1; j++) {
+      y = ref1[j];
+      if (ret[y[column1]] === void 0) {
+        ret[y[column1]] = (
+          obj = {},
+          obj["" + column1] = y[column1],
+          obj["" + column2] = [y[column2]],
+          obj.last_actioned_at = y.created_at,
+          obj.last_expires_at = y.expires_at,
+          obj
+        );
+      } else {
+        ret[y[column1]][column2].push(y[column2]);
+        ret[y[column1]].last_actioned_at = moment.max(moment(ret[y[column1]].last_actioned_at), moment(y.created_at)).toDate();
+        if (ret[y[column1]].last_expires_at === null) {
+          ret[y[column1]].last_expires_at = y.expires_at;
+        } else if (y.expires_at !== null) {
+          ret[y[column1]].last_expires_at = moment.max(moment(ret[y[column1]].last_expires_at), moment(y.expires_at)).toDate();
+        }
+      }
+    }
+  }
+  return _.values(ret);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._recent_events" id="apidoc.element.ger.MemESM.prototype._recent_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_recent_events
+        <span class="apidocSignatureSpan">(namespace, column1, actions, values, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_recent_events = function (namespace, column1, actions, values, options) {
+  var all_events, event, events, group_by_person_thing, grouped_events, i, j, last_actioned_at, last_expires_at, len, len1, person
+, query_hash, thing, thing_events, v;
+  if (options == null) {
+    options = {};
+  }
+  if (values.length === 0 || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    recommendations_per_neighbour: 10,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  options.actions = actions;
+  all_events = [];
+  for (i = 0, len = values.length; i &lt; len; i++) {
+    v = values[i];
+    query_hash = {
+      actions: actions
+    };
+    query_hash[column1] = v;
+    events = this._find_events(namespace, _.extend(query_hash, options)).slice(0, options.recommendations_per_neighbour);
+    all_events = all_events.concat(events);
+  }
+  group_by_person_thing = {};
+  for (j = 0, len1 = all_events.length; j &lt; len1; j++) {
+    event = all_events[j];
+    if (!group_by_person_thing[event.person]) {
+      group_by_person_thing[event.person] = {};
+    }
+    if (!group_by_person_thing[event.person][event.thing]) {
+      group_by_person_thing[event.person][event.thing] = {};
+    }
+    last_actioned_at = group_by_person_thing[event.person][event.thing].last_actioned_at || event.created_at;
+    last_actioned_at = moment.max(moment(last_actioned_at), moment(event.created_at)).toDate();
+    last_expires_at = group_by_person_thing[event.person][event.thing].last_expires_at || event.expires_at;
+    last_expires_at = moment.max(moment(last_expires_at), moment(event.expires_at)).toDate();
+    group_by_person_thing[event.person][event.thing] = {
+      person: event.person,
+      thing: event.thing,
+      last_actioned_at: last_actioned_at,
+      last_expires_at: last_expires_at
+    };
+  }
+  grouped_events = [];
+  for (person in group_by_person_thing) {
+    thing_events = group_by_person_thing[person];
+    for (thing in thing_events) {
+      event = thing_events[thing];
+      grouped_events = grouped_events.concat(event);
+    }
+  }
+  grouped_events = _.sortBy(grouped_events, function(x) {
+    return -x.last_actioned_at.getTime();
+  });
+  return bb["try"](function() {
+    return grouped_events;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype._similarities" id="apidoc.element.ger.MemESM.prototype._similarities">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>_similarities
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_similarities = function (namespace, column1, column2, value, values, actions, options) {
+  var i, len, similarities, v;
+  if (options == null) {
+    options = {};
+  }
+  if (values.length === 0) {
+    return bb["try"](function() {
+      return {};
+    });
+  }
+  options = _.defaults(options, {
+    similarity_search_size: 500,
+    current_datetime: new Date(),
+    event_decay_rate: 1
+  });
+  similarities = {};
+  for (i = 0, len = values.length; i &lt; len; i++) {
+    v = values[i];
+    similarities[v] = this._cosine_distance(namespace, column1, column2, value, v, actions, options.current_datetime, options.similarity_search_size
+, options.event_decay_rate);
+    similarities[v] = similarities[v] || 0;
+  }
+  return bb["try"](function() {
+    return similarities;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.add_event" id="apidoc.element.ger.MemESM.prototype.add_event">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>add_event
+        <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add_event = function (namespace, person, action, thing, dates) {
+  var base, base1, base2, base3, created_at, e, expires_at, found_event;
+  if (dates == null) {
+    dates = {};
+  }
+  if (!event_store[namespace]) {
+    return bb["try"](function() {
+      throw new Errors.NamespaceDoestNotExist();
+    });
+  }
+  created_at = moment(dates.created_at || new Date()).toDate();
+  expires_at = dates.expires_at ? moment(new Date(dates.expires_at)).toDate() : null;
+  found_event = this._find_event(namespace, person, action, thing);
+  if (found_event) {
+    found_event.created_at = created_at &gt; found_event.created_at ? created_at : found_event.created_at;
+    found_event.expires_at = expires_at &amp;&amp; expires_at &gt; found_event.expires_at ? expires_at : found_event.expires_at;
+  } else {
+    e = {
+      person: person,
+      action: action,
+      thing: thing,
+      created_at: created_at,
+      expires_at: expires_at
+    };
+    event_store[namespace].push(e);
+    (base = person_action_store[namespace])[person] || (base[person] = {});
+    (base1 = person_action_store[namespace][person])[action] || (base1[action] = {});
+    person_action_store[namespace][person][action][thing] = e;
+    (base2 = thing_action_store[namespace])[thing] || (base2[thing] = {});
+    (base3 = thing_action_store[namespace][thing])[action] || (base3[action] = {});
+    thing_action_store[namespace][thing][action][person] = e;
+  }
+  return bb["try"](function() {
+    return true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.add_events" id="apidoc.element.ger.MemESM.prototype.add_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>add_events
+        <span class="apidocSignatureSpan">(events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add_events = function (events) {
+  var e, i, len, promises;
+  promises = [];
+  for (i = 0, len = events.length; i &lt; len; i++) {
+    e = events[i];
+    promises.push(this.add_event(e.namespace, e.person, e.action, e.thing, {
+      created_at: e.created_at,
+      expires_at: e.expires_at
+    }));
+  }
+  return bb.all(promises);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.calculate_similarities_from_person" id="apidoc.element.ger.MemESM.prototype.calculate_similarities_from_person">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>calculate_similarities_from_person
+        <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_person = function (namespace, person, people, actions, options) {
+  if (options == null) {
+    options = {};
+  }
+  return this._similarities(namespace, 'person', 'thing', person, people, actions, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.calculate_similarities_from_thing" id="apidoc.element.ger.MemESM.prototype.calculate_similarities_from_thing">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>calculate_similarities_from_thing
+        <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_thing = function (namespace, person, people, actions, options) {
+  if (options == null) {
+    options = {};
+  }
+  return this._similarities(namespace, 'thing', 'person', person, people, actions, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.compact_people" id="apidoc.element.ger.MemESM.prototype.compact_people">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>compact_people
+        <span class="apidocSignatureSpan">(namespace, limit, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_people = function (namespace, limit, actions) {
+  var action, action_store, events, i, len, marked_for_deletion, person, ref;
+  marked_for_deletion = [];
+  ref = person_action_store[namespace];
+  for (person in ref) {
+    action_store = ref[person];
+    for (i = 0, len = actions.length; i &lt; len; i++) {
+      action = actions[i];
+      events = this._find_events(namespace, {
+        person: person,
+        action: action
+      });
+      if (events.length &gt; limit) {
+        marked_for_deletion = marked_for_deletion.concat(events.slice(limit));
+      }
+    }
+  }
+  this._delete_events(namespace, marked_for_deletion);
+  return bb["try"](function() {
+    return true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.compact_things" id="apidoc.element.ger.MemESM.prototype.compact_things">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>compact_things
+        <span class="apidocSignatureSpan">(namespace, limit, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_things = function (namespace, limit, actions) {
+  var action, action_store, events, i, len, marked_for_deletion, ref, thing;
+  marked_for_deletion = [];
+  ref = thing_action_store[namespace];
+  for (thing in ref) {
+    action_store = ref[thing];
+    for (i = 0, len = actions.length; i &lt; len; i++) {
+      action = actions[i];
+      events = this._find_events(namespace, {
+        thing: thing,
+        action: action
+      });
+      if (events.length &gt; limit) {
+        marked_for_deletion = marked_for_deletion.concat(events.slice(limit));
+      }
+    }
+  }
+  this._delete_events(namespace, marked_for_deletion);
+  return bb["try"](function() {
+    return true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.count_events" id="apidoc.element.ger.MemESM.prototype.count_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>count_events
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">count_events = function (namespace) {
+  return bb["try"]((function(_this) {
+    return function() {
+      return event_store[namespace].length;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.delete_events" id="apidoc.element.ger.MemESM.prototype.delete_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>delete_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete_events = function (namespace, options) {
+  var events;
+  if (options == null) {
+    options = {};
+  }
+  events = this._find_events(namespace, {
+    person: options.person,
+    action: options.action,
+    thing: options.thing
+  });
+  this._delete_events(namespace, events);
+  return bb["try"]((function(_this) {
+    return function() {
+      return {
+        deleted: events.length
+      };
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.destroy" id="apidoc.element.ger.MemESM.prototype.destroy">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>destroy
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy = function (namespace) {
+  delete event_store[namespace];
+  delete person_action_store[namespace];
+  delete thing_action_store[namespace];
+  return bb["try"](function() {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.estimate_event_count" id="apidoc.element.ger.MemESM.prototype.estimate_event_count">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>estimate_event_count
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">estimate_event_count = function (namespace) {
+  return bb["try"]((function(_this) {
+    return function() {
+      return event_store[namespace].length;
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.exists" id="apidoc.element.ger.MemESM.prototype.exists">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>exists
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exists = function (namespace) {
+  return bb["try"]((function(_this) {
+    return function() {
+      return !!event_store[namespace];
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.filter_things_by_previous_actions" id="apidoc.element.ger.MemESM.prototype.filter_things_by_previous_actions">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>filter_things_by_previous_actions
+        <span class="apidocSignatureSpan">(namespace, person, things, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter_things_by_previous_actions = function (namespace, person, things, actions) {
+  var action, filtered_things, i, len;
+  if (!actions || actions.length === 0 || things.length === 0) {
+    return bb["try"](function() {
+      return things;
+    });
+  }
+  filtered_things = things;
+  for (i = 0, len = actions.length; i &lt; len; i++) {
+    action = actions[i];
+    filtered_things = _.intersection(filtered_things, this._filter_things_by_previous_action(namespace, person, things, action));
+  }
+  return bb["try"](function() {
+    return filtered_things;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.find_events" id="apidoc.element.ger.MemESM.prototype.find_events">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>find_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find_events = function (namespace, options) {
+  if (options == null) {
+    options = {};
+  }
+  return bb["try"]((function(_this) {
+    return function() {
+      return _this._find_events(namespace, options);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.initialize" id="apidoc.element.ger.MemESM.prototype.initialize">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>initialize
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function (namespace) {
+  event_store[namespace] || (event_store[namespace] = []);
+  person_action_store[namespace] || (person_action_store[namespace] = {});
+  thing_action_store[namespace] || (thing_action_store[namespace] = {});
+  return bb["try"](function() {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.list_namespaces" id="apidoc.element.ger.MemESM.prototype.list_namespaces">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>list_namespaces
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list_namespaces = function () {
+  return bb["try"](function() {
+    return Object.keys(event_store);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.person_neighbourhood" id="apidoc.element.ger.MemESM.prototype.person_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>person_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, person, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">person_neighbourhood = function (namespace, person, actions, options) {
+  var one_degree_away, query_hash, unexpired_events, x;
+  if (options == null) {
+    options = {};
+  }
+  if (!actions || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    neighbourhood_size: 100,
+    neighbourhood_search_size: 500,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  options.actions = actions;
+  options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  one_degree_away = this._one_degree_away(namespace, 'person', 'thing', person, _.clone(options));
+  query_hash = _.clone(options);
+  query_hash.people = one_degree_away.map(function(x) {
+    return x.person;
+  });
+  unexpired_events = (function() {
+    var i, len, ref, results;
+    ref = this._find_events(namespace, query_hash);
+    results = [];
+    for (i = 0, len = ref.length; i &lt; len; i++) {
+      x = ref[i];
+      if (person !== x.person) {
+        results.push(x.person);
+      }
+    }
+    return results;
+  }).call(this);
+  return bb["try"](function() {
+    return _.uniq(unexpired_events).slice(0, options.neighbourhood_size);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.post_compact" id="apidoc.element.ger.MemESM.prototype.post_compact">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>post_compact
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post_compact = function () {
+  return bb["try"](function() {
+    return true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.pre_compact" id="apidoc.element.ger.MemESM.prototype.pre_compact">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>pre_compact
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pre_compact = function () {
+  return bb["try"](function() {
+    return true;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.recent_recommendations_by_people" id="apidoc.element.ger.MemESM.prototype.recent_recommendations_by_people">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>recent_recommendations_by_people
+        <span class="apidocSignatureSpan">(namespace, actions, people, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recent_recommendations_by_people = function (namespace, actions, people, options) {
+  return this._recent_events(namespace, 'person', actions, people, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.MemESM.prototype.thing_neighbourhood" id="apidoc.element.ger.MemESM.prototype.thing_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.MemESM.prototype.</span>thing_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, thing, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thing_neighbourhood = function (namespace, thing, actions, options) {
+  var one_degree_away;
+  if (options == null) {
+    options = {};
+  }
+  if (!actions || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    neighbourhood_size: 100,
+    neighbourhood_search_size: 500,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  options.actions = actions;
+  options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  one_degree_away = this._one_degree_away(namespace, 'thing', 'person', thing, _.clone(options));
+  one_degree_away = one_degree_away.filter(function(x) {
+    return x.thing !== thing &amp;&amp; !!x.last_expires_at &amp;&amp; !moment(x.last_expires_at).isBefore(options.expires_after);
+  });
+  one_degree_away.map(function(x) {
+    x.people = _.uniq(x.person);
+    return delete x.person;
+  });
+  one_degree_away = _.sortBy(one_degree_away, function(x) {
+    return -x.people.length;
+  });
+  return bb["try"](function() {
+    return one_degree_away.slice(0, options.neighbourhood_size);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.PsqlESM" id="apidoc.module.ger.PsqlESM">module ger.PsqlESM</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.PsqlESM" id="apidoc.element.ger.PsqlESM.PsqlESM">
+        function <span class="apidocSignatureSpan">ger.</span>PsqlESM
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PSQLEventStoreManager(options) {
+  if (options == null) {
+    options = {};
+  }
+  this._knex = options.knex;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.PsqlESM.prototype" id="apidoc.module.ger.PsqlESM.prototype">module ger.PsqlESM.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype._history" id="apidoc.element.ger.PsqlESM.prototype._history">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_history
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, al_values, limit)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_history = function (namespace, column1, column2, value, al_values, limit) {
+  return this._knex(namespace + ".events").select(column2, "action").max('created_at as created_at').groupBy(column2, "action").
+whereRaw("action in ( " + al_values + " )").orderByRaw("max(created_at) DESC").whereRaw('created_at &lt;= :now').whereRaw(column1 + " = " +
+value).limit(limit);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype._one_degree_away" id="apidoc.element.ger.PsqlESM.prototype._one_degree_away">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_one_degree_away
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_one_degree_away = function (namespace, column1, column2, value, actions, options) {
+  var query_hash, recent_events;
+  query_hash = {};
+  query_hash[column1] = value;
+  recent_events = this._knex(namespace + ".events").where(query_hash).whereIn('action', actions).orderByRaw('created_at DESC').limit
+(options.neighbourhood_search_size);
+  return this._knex(recent_events.as('e')).innerJoin(namespace + ".events as f", function() {
+    return this.on("e." + column2, "f." + column2).on("f." + column1, '!=', "e." + column1);
+  }).where("e." + column1, value).whereIn('f.action', actions).where('f.created_at', '&lt;=', options.current_datetime).where('e.created_at
+', '&lt;=', options.current_datetime).select(this._knex.raw("f." + column1 + ", MAX(f.created_at) as last_actioned_at, MAX(f.expires_at
+) as last_expires_at, array_agg(f." + column2 + ") as " + column2 + ", date_trunc('day', max(e.created_at)) as created_at_day, count
+(f." + column1 + ") as action_count")).groupBy("f." + column1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype._recent_events" id="apidoc.element.ger.PsqlESM.prototype._recent_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_recent_events
+        <span class="apidocSignatureSpan">(namespace, column1, actions, values, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_recent_events = function (namespace, column1, actions, values, options) {
+  var a, action_values, ai, akey, bindings, expires_after, i, j, k, key, len, len1, ql, query, v;
+  if (options == null) {
+    options = {};
+  }
+  if (values.length === 0 || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    recommendations_per_neighbour: 10,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  bindings = {
+    expires_after: expires_after,
+    now: options.current_datetime
+  };
+  action_values = [];
+  for (ai = j = 0, len = actions.length; j &lt; len; ai = ++j) {
+    a = actions[ai];
+    akey = "action_" + ai;
+    bindings[akey] = a;
+    action_values.push(" :" + akey + " ");
+  }
+  action_values = action_values.join(',');
+  ql = [];
+  for (i = k = 0, len1 = values.length; k &lt; len1; i = ++k) {
+    v = values[i];
+    key = "value_" + i;
+    bindings[key] = v;
+    ql.push("(select person, thing, MAX(created_at) as last_actioned_at, MAX(expires_at) as last_expires_at from \"" + namespace
+ + "\".events where created_at &lt;= :now and action in (" + action_values + ") and " + column1 + " = :" + key + " and (expires_at &gt; :expires_after ) group by person, thing order by last_actioned_at DESC limit " + options.recommendations_per_neighbour + ")");
+  }
+  query = ql.join(" UNION ");
+  if (ql.length &gt; 1) {
+    query += " order by last_actioned_at DESC";
+  }
+  return this._knex.raw(query, bindings).then(function(ret) {
+    return ret.rows;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype._similarities" id="apidoc.element.ger.PsqlESM.prototype._similarities">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_similarities
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_similarities = function (namespace, column1, column2, value, values, actions, options) {
+  if (options == null) {
+    options = {};
+  }
+  if (!actions || actions.length === 0 || values.length === 0) {
+    return bb["try"](function() {
+      return {};
+    });
+  }
+  options = _.defaults(options, {
+    similarity_search_size: 500,
+    event_decay_rate: 1,
+    current_datetime: new Date()
+  });
+  return this.get_cosine_distances(namespace, column1, column2, value, values, actions, options.similarity_search_size, options.
+event_decay_rate, options.current_datetime);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype._unexpired_events" id="apidoc.element.ger.PsqlESM.prototype._unexpired_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>_unexpired_events
+        <span class="apidocSignatureSpan">(namespace, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_unexpired_events = function (namespace, actions, options) {
+  return this._knex(namespace + ".events").select('person').whereRaw('expires_at IS NOT NULL').where('expires_at', '&gt;', options.
+expires_after).where('created_at', '&lt;=', options.current_datetime).whereIn('action', actions).whereRaw("person = x.person");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.add_event" id="apidoc.element.ger.PsqlESM.prototype.add_event">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_event
+        <span class="apidocSignatureSpan">(namespace, person, action, thing, dates)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add_event = function (namespace, person, action, thing, dates) {
+  if (dates == null) {
+    dates = {};
+  }
+  return this.add_events([
+    {
+      namespace: namespace,
+      person: person,
+      action: action,
+      thing: thing,
+      created_at: dates.created_at,
+      expires_at: dates.expires_at
+    }
+  ]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.add_events" id="apidoc.element.ger.PsqlESM.prototype.add_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_events
+        <span class="apidocSignatureSpan">(events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add_events = function (events) {
+  var e, es, j, len, namespace, namespaces, now, promises;
+  namespaces = {};
+  now = new Date().toISOString();
+  for (j = 0, len = events.length; j &lt; len; j++) {
+    e = events[j];
+    e.created_at = e.created_at || now;
+    if (!namespaces[e.namespace]) {
+      namespaces[e.namespace] = [];
+    }
+    namespaces[e.namespace].push(e);
+    delete e.namespace;
+  }
+  promises = [];
+  for (namespace in namespaces) {
+    es = namespaces[namespace];
+    promises.push(this.add_events_to_namespace(namespace, es));
+  }
+  return bb.all(promises);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.add_events_to_namespace" id="apidoc.element.ger.PsqlESM.prototype.add_events_to_namespace">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>add_events_to_namespace
+        <span class="apidocSignatureSpan">(namespace, events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">add_events_to_namespace = function (namespace, events) {
+  return this._knex(namespace + ".events").insert(events)["catch"](function(error) {
+    if (error.message.indexOf("relation") &gt; -1 &amp;&amp; error.message.indexOf(namespace) &gt; -1 &amp;&amp; error.message.indexOf("does not exist
+") &gt; -1) {
+      throw new Errors.NamespaceDoestNotExist();
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.analyze" id="apidoc.element.ger.PsqlESM.prototype.analyze">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>analyze
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">analyze = function (namespace) {
+  return this._knex.raw("ANALYZE \"" + namespace + "\".events");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_person" id="apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_person">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>calculate_similarities_from_person
+        <span class="apidocSignatureSpan">(namespace, person, people, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_person = function (namespace, person, people, actions, options) {
+  if (options == null) {
+    options = {};
+  }
+  return this._similarities(namespace, 'person', 'thing', person, people, actions, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_thing" id="apidoc.element.ger.PsqlESM.prototype.calculate_similarities_from_thing">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>calculate_similarities_from_thing
+        <span class="apidocSignatureSpan">(namespace, thing, things, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calculate_similarities_from_thing = function (namespace, thing, things, actions, options) {
+  if (options == null) {
+    options = {};
+  }
+  return this._similarities(namespace, 'thing', 'person', thing, things, actions, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.compact_people" id="apidoc.element.ger.PsqlESM.prototype.compact_people">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>compact_people
+        <span class="apidocSignatureSpan">(namespace, compact_database_person_action_limit, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_people = function (namespace, compact_database_person_action_limit, actions) {
+  return this.get_active_people(namespace).then((function(_this) {
+    return function(people) {
+      return _this.truncate_people_per_action(namespace, people, compact_database_person_action_limit, actions);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.compact_things" id="apidoc.element.ger.PsqlESM.prototype.compact_things">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>compact_things
+        <span class="apidocSignatureSpan">(namespace, compact_database_thing_action_limit, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compact_things = function (namespace, compact_database_thing_action_limit, actions) {
+  return this.get_active_things(namespace).then((function(_this) {
+    return function(things) {
+      return _this.truncate_things_per_action(namespace, things, compact_database_thing_action_limit, actions);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.cosine_distance" id="apidoc.element.ger.PsqlESM.prototype.cosine_distance">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>cosine_distance
+        <span class="apidocSignatureSpan">(namespace, column1, column2, limit, a_values, al_values)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cosine_distance = function (namespace, column1, column2, limit, a_values, al_values) {
+  var s1, s1_weighted, s1q, s2, s2_weighted, s2q, weighted_actions;
+  s1q = this._history(namespace, column1, column2, ':value', al_values, limit).toString();
+  s2q = this._history(namespace, column1, column2, 't.cvalue', al_values, limit).toString();
+  weighted_actions = "select cast(a.weight as float) * power( :event_decay_rate, - date_part('day', age( :now , x.created_at )))
+from (VALUES " + a_values + ") AS a (action,weight) where x.action = a.action";
+  s1_weighted = "select x." + column2 + ", (" + weighted_actions + ") as weight from (" + s1q + ") as x";
+  s2_weighted = "select x." + column2 + ", (" + weighted_actions + ") as weight from (" + s2q + ") as x";
+  s1 = "select ws." + column2 + " as value, max(ws.weight) as weight from (" + s1_weighted + ") as ws where ws.weight != 0 group
+ by ws." + column2;
+  s2 = "select ws." + column2 + " as value, max(ws.weight) as weight from (" + s2_weighted + ") as ws where ws.weight != 0 group
+ by ws." + column2;
+  return (this.cosine_query(namespace, s1, s2)) + " as cosine_distance";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.cosine_query" id="apidoc.element.ger.PsqlESM.prototype.cosine_query">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>cosine_query
+        <span class="apidocSignatureSpan">(namespace, s1, s2)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">cosine_query = function (namespace, s1, s2) {
+  var denominator_1, denominator_2, numerator_1, numerator_2;
+  numerator_1 = "(select (tbl1.weight * tbl2.weight) as weight from (" + s1 + ") tbl1 join (" + s2 + ") tbl2 on tbl1.value = tbl2
+.value)";
+  numerator_2 = "(select SUM(n1.weight) from (" + numerator_1 + ") as n1)";
+  denominator_1 = "(select SUM(power(s1.weight, 2.0)) from (" + s1 + ") as s1)";
+  denominator_2 = "(select SUM(power(s2.weight, 2.0)) from (" + s2 + ") as s2)";
+  return "COALESCE( (" + numerator_2 + " / ((|/ " + denominator_1 + ") * (|/ " + denominator_2 + ")) ), 0)";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.count_events" id="apidoc.element.ger.PsqlESM.prototype.count_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>count_events
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">count_events = function (namespace) {
+  return this._knex(namespace + ".events").count().then(function(count) {
+    return parseInt(count[0].count);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.delete_events" id="apidoc.element.ger.PsqlESM.prototype.delete_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>delete_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">delete_events = function (namespace, options) {
+  var q;
+  if (options == null) {
+    options = {};
+  }
+  q = this._knex(namespace + ".events");
+  if (options.person) {
+    q = q.where({
+      person: options.person
+    });
+  }
+  if (options.people) {
+    q = q.whereIn('person', options.people);
+  }
+  if (options.action) {
+    q = q.where({
+      action: options.action
+    });
+  }
+  if (options.actions) {
+    q = q.whereIn('action', options.actions);
+  }
+  if (options.thing) {
+    q = q.where({
+      thing: options.thing
+    });
+  }
+  if (options.things) {
+    q = q.whereIn('thing', options.things);
+  }
+  return q.del().then(function(delete_count) {
+    return {
+      deleted: delete_count
+    };
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.destroy" id="apidoc.element.ger.PsqlESM.prototype.destroy">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>destroy
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">destroy = function (namespace) {
+  return drop_tables(this._knex, namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.estimate_event_count" id="apidoc.element.ger.PsqlESM.prototype.estimate_event_count">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>estimate_event_count
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">estimate_event_count = function (namespace) {
+  return this._knex.raw("SELECT cast(reltuples as bigint) AS estimate FROM pg_class WHERE  oid = cast(:ns as regclass);", {
+    ns: namespace + ".events"
+  }).then(function(rows) {
+    if (rows.rows.length === 0) {
+      return 0;
+    }
+    return parseInt(rows.rows[0].estimate);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.exists" id="apidoc.element.ger.PsqlESM.prototype.exists">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>exists
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exists = function (namespace) {
+  return this.list_namespaces().then((function(_this) {
+    return function(namespaces) {
+      return _.contains(namespaces, namespace);
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.filter_things_by_previous_actions" id="apidoc.element.ger.PsqlESM.prototype.filter_things_by_previous_actions">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>filter_things_by_previous_actions
+        <span class="apidocSignatureSpan">(namespace, person, things, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filter_things_by_previous_actions = function (namespace, person, things, actions) {
+  var a, action_values, ai, akey, bindings, filter_things_sql, j, k, len, len1, query, t, thing_values, things_rows, ti, tkey;
+  if (!actions || actions.length === 0 || things.length === 0) {
+    return bb["try"](function() {
+      return things;
+    });
+  }
+  bindings = {
+    person: person
+  };
+  action_values = [];
+  for (ai = j = 0, len = actions.length; j &lt; len; ai = ++j) {
+    a = actions[ai];
+    akey = "action_" + ai;
+    bindings[akey] = a;
+    action_values.push(" :" + akey + " ");
+  }
+  action_values = action_values.join(',');
+  thing_values = [];
+  for (ti = k = 0, len1 = things.length; k &lt; len1; ti = ++k) {
+    t = things[ti];
+    tkey = "thing_" + ti;
+    bindings[tkey] = t;
+    thing_values.push("( :" + tkey + " )");
+  }
+  thing_values = thing_values.join(", ");
+  things_rows = "(VALUES " + thing_values + " ) AS t (tthing)";
+  filter_things_sql = this._knex(namespace + ".events").select("thing").whereRaw("person = :person").whereRaw("action in (" + action_values
+ + ")").whereRaw("thing = t.tthing").toSQL();
+  query = "select tthing from " + things_rows + " where not exists (" + filter_things_sql.sql + ")";
+  return this._knex.raw(query, bindings).then(function(rows) {
+    var l, len2, r, ref, results;
+    ref = rows.rows;
+    results = [];
+    for (l = 0, len2 = ref.length; l &lt; len2; l++) {
+      r = ref[l];
+      results.push(r.tthing);
+    }
+    return results;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.find_events" id="apidoc.element.ger.PsqlESM.prototype.find_events">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>find_events
+        <span class="apidocSignatureSpan">(namespace, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find_events = function (namespace, options) {
+  var q;
+  if (options == null) {
+    options = {};
+  }
+  options = _.defaults(options, {
+    size: 50,
+    page: 0,
+    current_datetime: new Date()
+  });
+  if (options.time_until_expiry) {
+    options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  }
+  q = this._knex(namespace + ".events").select("person", "action", "thing").max('created_at as created_at').max('expires_at as expires_at
+').where('created_at', '&lt;=', options.current_datetime).orderBy('created_at', 'desc').groupBy(['person', "action", "thing"]).limit
+(options.size).offset(options.size * options.page);
+  if (options.expires_after) {
+    q.where('expires_at', '&gt;', options.expires_after);
+  }
+  if (options.person) {
+    q = q.where({
+      person: options.person
+    });
+  }
+  if (options.people) {
+    q = q.whereIn('person', options.people);
+  }
+  if (options.action) {
+    q = q.where({
+      action: options.action
+    });
+  }
+  if (options.actions) {
+    q = q.whereIn('action', options.actions);
+  }
+  if (options.thing) {
+    q = q.where({
+      thing: options.thing
+    });
+  }
+  if (options.things) {
+    q = q.whereIn('thing', options.things);
+  }
+  return q.then(function(rows) {
+    return rows;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.get_active_people" id="apidoc.element.ger.PsqlESM.prototype.get_active_people">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_active_people
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get_active_people = function (namespace) {
+  return this._knex('pg_stats').select('most_common_vals').where({
+    attname: 'person',
+    tablename: 'events',
+    schemaname: namespace
+  }).then(function(rows) {
+    var common_str, people;
+    if (!rows[0]) {
+      return [];
+    }
+    common_str = rows[0].most_common_vals;
+    if (!common_str) {
+      return [];
+    }
+    common_str = common_str.slice(1, +(common_str.length - 2) + 1 || 9e9);
+    people = common_str.split(',');
+    return people;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.get_active_things" id="apidoc.element.ger.PsqlESM.prototype.get_active_things">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_active_things
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get_active_things = function (namespace) {
+  return this._knex('pg_stats').select('most_common_vals').where({
+    attname: 'thing',
+    tablename: 'events',
+    schemaname: namespace
+  }).then(function(rows) {
+    var common_str, things;
+    if (!rows[0]) {
+      return [];
+    }
+    common_str = rows[0].most_common_vals;
+    if (!common_str) {
+      return [];
+    }
+    common_str = common_str.slice(1, +(common_str.length - 2) + 1 || 9e9);
+    things = common_str.split(',');
+    return things;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.get_cosine_distances" id="apidoc.element.ger.PsqlESM.prototype.get_cosine_distances">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>get_cosine_distances
+        <span class="apidocSignatureSpan">(namespace, column1, column2, value, values, actions, limit, event_decay_rate, now)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get_cosine_distances = function (namespace, column1, column2, value, values, actions, limit, event_decay_rate, now) {
+  var a, a_values, action, action_list, ai, akey, al_values, bindings, cosine_distance, j, k, len, len1, query, v, v_values, vi,
+vkey, weight, wkey;
+  if (values.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  bindings = {
+    value: value,
+    now: now,
+    event_decay_rate: event_decay_rate
+  };
+  action_list = [];
+  for (action in actions) {
+    weight = actions[action];
+    action_list.push({
+      action: action,
+      weight: weight,
+      weight: weight
+    });
+  }
+  a_values = [];
+  al_values = [];
+  for (ai = j = 0, len = action_list.length; j &lt; len; ai = ++j) {
+    a = action_list[ai];
+    akey = "action_" + ai;
+    wkey = "weight_" + ai;
+    bindings[akey] = a.action;
+    bindings[wkey] = a.weight;
+    a_values.push("( :" + akey + ", :" + wkey + " )");
+    al_values.push(":" + akey);
+  }
+  a_values = a_values.join(', ');
+  al_values = al_values.join(' , ');
+  v_values = [];
+  for (vi = k = 0, len1 = values.length; k &lt; len1; vi = ++k) {
+    v = values[vi];
+    vkey = "value_" + vi;
+    bindings[vkey] = v;
+    v_values.push("( :" + vkey + " )");
+  }
+  v_values = v_values.join(', ');
+  cosine_distance = this.cosine_distance(namespace, column1, column2, limit, a_values, al_values, event_decay_rate);
+  query = "select cvalue, " + cosine_distance + " from (VALUES " + v_values + " ) AS t (cvalue)";
+  return this._knex.raw(query, bindings).then(function(rows) {
+    var l, len2, ref, row, similarities;
+    similarities = {};
+    ref = rows.rows;
+    for (l = 0, len2 = ref.length; l &lt; len2; l++) {
+      row = ref[l];
+      similarities[row.cvalue] = row.cosine_distance;
+    }
+    return similarities;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.initialize" id="apidoc.element.ger.PsqlESM.prototype.initialize">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>initialize
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function (namespace) {
+  return this.exists(namespace).then((function(_this) {
+    return function(exists) {
+      if (!exists) {
+        return init_tables(_this._knex, namespace);
+      }
+    };
+  })(this));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.list_namespaces" id="apidoc.element.ger.PsqlESM.prototype.list_namespaces">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>list_namespaces
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">list_namespaces = function () {
+  return this._knex.raw("SELECT table_schema FROM information_schema.tables WHERE table_name = 'events'").then(function(res) {
+    var ret;
+    ret = _.uniq(res.rows.map(function(row) {
+      return row.table_schema;
+    }));
+    ret = ret.filter(function(x) {
+      return x !== 'default';
+    });
+    return ret;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.person_neighbourhood" id="apidoc.element.ger.PsqlESM.prototype.person_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>person_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, person, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">person_neighbourhood = function (namespace, person, actions, options) {
+  var one_degree_away, unexpired_events;
+  if (options == null) {
+    options = {};
+  }
+  if (!actions || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    neighbourhood_size: 100,
+    neighbourhood_search_size: 500,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  one_degree_away = this._one_degree_away(namespace, 'person', 'thing', person, actions, options).orderByRaw("created_at_day DESC
+, action_count DESC");
+  unexpired_events = this._unexpired_events(namespace, actions, options);
+  return this._knex(one_degree_away.as('x')).whereExists(unexpired_events).orderByRaw("x.created_at_day DESC, x.action_count DESC
+").limit(options.neighbourhood_size).then(function(rows) {
+    var j, len, results, row;
+    results = [];
+    for (j = 0, len = rows.length; j &lt; len; j++) {
+      row = rows[j];
+      results.push(row.person);
+    }
+    return results;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.post_compact" id="apidoc.element.ger.PsqlESM.prototype.post_compact">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>post_compact
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post_compact = function (namespace) {
+  return this.analyze(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.pre_compact" id="apidoc.element.ger.PsqlESM.prototype.pre_compact">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>pre_compact
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pre_compact = function (namespace) {
+  return this.analyze(namespace);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.recent_recommendations_by_people" id="apidoc.element.ger.PsqlESM.prototype.recent_recommendations_by_people">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>recent_recommendations_by_people
+        <span class="apidocSignatureSpan">(namespace, actions, people, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recent_recommendations_by_people = function (namespace, actions, people, options) {
+  return this._recent_events(namespace, 'person', actions, people, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.remove_events_till_size" id="apidoc.element.ger.PsqlESM.prototype.remove_events_till_size">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>remove_events_till_size
+        <span class="apidocSignatureSpan">(namespace, number_of_events)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">remove_events_till_size = function (namespace, number_of_events) {
+  var query;
+  query = "delete from " + namespace + ".events where id not in (select id from " + namespace + ".events order by created_at desc
+ limit " + number_of_events + ")";
+  return this._knex.raw(query);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.thing_neighbourhood" id="apidoc.element.ger.PsqlESM.prototype.thing_neighbourhood">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>thing_neighbourhood
+        <span class="apidocSignatureSpan">(namespace, thing, actions, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">thing_neighbourhood = function (namespace, thing, actions, options) {
+  var one_degree_away;
+  if (options == null) {
+    options = {};
+  }
+  if (!actions || actions.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  options = _.defaults(options, {
+    neighbourhood_size: 100,
+    neighbourhood_search_size: 500,
+    time_until_expiry: 0,
+    current_datetime: new Date()
+  });
+  options.expires_after = moment(options.current_datetime).add(options.time_until_expiry, 'seconds').format();
+  one_degree_away = this._one_degree_away(namespace, 'thing', 'person', thing, actions, options).orderByRaw("action_count DESC");
+  return this._knex(one_degree_away.as('x')).where('x.last_expires_at', '&gt;', options.expires_after).where('x.last_actioned_at', '&lt;=',
+options.current_datetime).orderByRaw("x.action_count DESC").limit(options.neighbourhood_size).then(function(rows) {
+    var j, len, row;
+    for (j = 0, len = rows.length; j &lt; len; j++) {
+      row = rows[j];
+      row.people = _.uniq(row.person);
+    }
+    return rows;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.truncate_people_per_action" id="apidoc.element.ger.PsqlESM.prototype.truncate_people_per_action">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_people_per_action
+        <span class="apidocSignatureSpan">(namespace, people, trunc_size, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">truncate_people_per_action = function (namespace, people, trunc_size, actions) {
+  var action, fn, j, k, len, len1, person, promise;
+  if (people.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  promise = bb["try"](function() {});
+  for (j = 0, len = people.length; j &lt; len; j++) {
+    person = people[j];
+    fn = (function(_this) {
+      return function(person, action) {
+        return promise = promise.then(function() {
+          return _this.truncate_person_actions(namespace, person, trunc_size, action);
+        });
+      };
+    })(this);
+    for (k = 0, len1 = actions.length; k &lt; len1; k++) {
+      action = actions[k];
+      fn(person, action);
+    }
+  }
+  return promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.truncate_person_actions" id="apidoc.element.ger.PsqlESM.prototype.truncate_person_actions">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_person_actions
+        <span class="apidocSignatureSpan">(namespace, person, trunc_size, action)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">truncate_person_actions = function (namespace, person, trunc_size, action) {
+  var bindings, q;
+  bindings = {
+    person: person,
+    action: action
+  };
+  q = "delete from \"" + namespace + "\".events as e where e.id in (select id from \"" + namespace + "\".events where action = :
+action and person = :person order by created_at DESC offset " + trunc_size + ");";
+  return this._knex.raw(q, bindings);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.truncate_thing_actions" id="apidoc.element.ger.PsqlESM.prototype.truncate_thing_actions">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_thing_actions
+        <span class="apidocSignatureSpan">(namespace, thing, trunc_size, action)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">truncate_thing_actions = function (namespace, thing, trunc_size, action) {
+  var bindings, q;
+  bindings = {
+    thing: thing,
+    action: action
+  };
+  q = "delete from \"" + namespace + "\".events as e where e.id in (select id from \"" + namespace + "\".events where action = :
+action and thing = :thing order by created_at DESC offset " + trunc_size + ");";
+  return this._knex.raw(q, bindings);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.truncate_things_per_action" id="apidoc.element.ger.PsqlESM.prototype.truncate_things_per_action">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>truncate_things_per_action
+        <span class="apidocSignatureSpan">(namespace, things, trunc_size, actions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">truncate_things_per_action = function (namespace, things, trunc_size, actions) {
+  var action, fn, j, k, len, len1, promise, thing;
+  if (things.length === 0) {
+    return bb["try"](function() {
+      return [];
+    });
+  }
+  promise = bb["try"](function() {});
+  for (j = 0, len = things.length; j &lt; len; j++) {
+    thing = things[j];
+    fn = (function(_this) {
+      return function(thing, action) {
+        return promise = promise.then(function() {
+          return _this.truncate_thing_actions(namespace, thing, trunc_size, action);
+        });
+      };
+    })(this);
+    for (k = 0, len1 = actions.length; k &lt; len1; k++) {
+      action = actions[k];
+      fn(thing, action);
+    }
+  }
+  return promise;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.PsqlESM.prototype.vacuum_analyze" id="apidoc.element.ger.PsqlESM.prototype.vacuum_analyze">
+        function <span class="apidocSignatureSpan">ger.PsqlESM.prototype.</span>vacuum_analyze
+        <span class="apidocSignatureSpan">(namespace)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">vacuum_analyze = function (namespace) {
+  return this._knex.raw("VACUUM ANALYZE \"" + namespace + "\".events");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.knex" id="apidoc.module.ger.knex">module ger.knex</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.knex" id="apidoc.element.ger.knex.knex">
+        function <span class="apidocSignatureSpan">ger.</span>knex
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Knex(config) {
+  if (typeof config === 'string') {
+    return new Knex((0, _assign3.default)((0, _parseConnection2.default)(config), arguments[2]));
+  }
+  var Dialect = void 0;
+  if (arguments.length === 0 || !config.client &amp;&amp; !config.dialect) {
+    Dialect = _client2.default;
+  } else if (typeof config.client === 'function' &amp;&amp; config.client.prototype instanceof _client2.default) {
+    Dialect = config.client;
+  } else {
+    var clientName = config.client || config.dialect;
+    Dialect = require('./dialects/' + (aliases[clientName] || clientName) + '/index.js');
+  }
+  if (typeof config.connection === 'string') {
+    config = (0, _assign3.default)({}, config, { connection: (0, _parseConnection2.default)(config.connection).connection });
+  }
+  return (0, _makeKnex2.default)(new Dialect(config));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client" id="apidoc.element.ger.knex.Client">
+        function <span class="apidocSignatureSpan">ger.knex.</span>Client
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Client() {
+  var config = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  this.config = config;
+  this.connectionSettings = (0, _cloneDeep3.default)(config.connection || {});
+  if (this.driverName &amp;&amp; config.connection) {
+    this.initializeDriver();
+    if (!config.pool || config.pool &amp;&amp; config.pool.max !== 0) {
+      this.__cid = clientId();
+      this.initializePool(config);
+    }
+  }
+  this.valueForUndefined = this.raw('DEFAULT');
+  if (config.useNullAsDefault) {
+    this.valueForUndefined = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.raw" id="apidoc.element.ger.knex.raw">
+        function <span class="apidocSignatureSpan">ger.knex.</span>raw
+        <span class="apidocSignatureSpan">(sql, bindings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">raw = function (sql, bindings) {
+  (0, _helpers.warn)('global Knex.raw is deprecated, use knex.raw (chain off an initialized knex object)');
+  return new _raw2.default().set(sql, bindings);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.knex.Client" id="apidoc.module.ger.knex.Client">module ger.knex.Client</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.Client" id="apidoc.element.ger.knex.Client.Client">
+        function <span class="apidocSignatureSpan">ger.knex.</span>Client
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Client() {
+  var config = arguments.length &gt; 0 &amp;&amp; arguments[0] !== undefined ? arguments[0] : {};
+
+  this.config = config;
+  this.connectionSettings = (0, _cloneDeep3.default)(config.connection || {});
+  if (this.driverName &amp;&amp; config.connection) {
+    this.initializeDriver();
+    if (!config.pool || config.pool &amp;&amp; config.pool.max !== 0) {
+      this.__cid = clientId();
+      this.initializePool(config);
+    }
+  }
+  this.valueForUndefined = this.raw('DEFAULT');
+  if (config.useNullAsDefault) {
+    this.valueForUndefined = null;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.super_" id="apidoc.element.ger.knex.Client.super_">
+        function <span class="apidocSignatureSpan">ger.knex.Client.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
+  EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.ger.knex.Client.prototype" id="apidoc.module.ger.knex.Client.prototype">module ger.knex.Client.prototype</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype._escapeBinding" id="apidoc.element.ger.knex.Client.prototype._escapeBinding">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>_escapeBinding
+        <span class="apidocSignatureSpan">(val)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function finalEscape(val) {
+  var ctx = arguments.length &gt; 1 &amp;&amp; arguments[1] !== undefined ? arguments[1] : {};
+
+  return escapeFn(val, finalEscape, ctx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype._formatQuery" id="apidoc.element.ger.knex.Client.prototype._formatQuery">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>_formatQuery
+        <span class="apidocSignatureSpan">(sql, bindings, timeZone)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function _formatQuery(sql, bindings, timeZone) {
+  var _this = this;
+
+  bindings = bindings == null ? [] : [].concat(bindings);
+  var index = 0;
+  return sql.replace(/\\?\?/g, function (match) {
+    if (match === '\\?') {
+      return '?';
+    }
+    if (index === bindings.length) {
+      return match;
+    }
+    var value = bindings[index++];
+    return _this._escapeBinding(value, { timeZone: timeZone });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.acquireConnection" id="apidoc.element.ger.knex.Client.prototype.acquireConnection">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>acquireConnection
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function acquireConnection() {
+  var _this4 = this;
+
+  return new _bluebird2.default(function (resolver, rejecter) {
+    if (!_this4.pool) {
+      return rejecter(new Error('Unable to acquire a connection'));
+    }
+    var wasRejected = false;
+    var t = setTimeout(function () {
+      wasRejected = true;
+      rejecter(new _bluebird2.default.TimeoutError('Knex: Timeout acquiring a connection. The pool is probably full. ' + 'Are you
+ missing a .transacting(trx) call?'));
+    }, _this4.config.acquireConnectionTimeout || 60000);
+    _this4.pool.acquire(function (err, connection) {
+      if (err) {
+        return rejecter(err);
+      }
+      clearTimeout(t);
+      if (wasRejected) {
+        _this4.pool.release(connection);
+      } else {
+        debug('acquired connection from pool: %s', connection.__knexUid);
+        resolver(connection);
+      }
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.assertCanCancelQuery" id="apidoc.element.ger.knex.Client.prototype.assertCanCancelQuery">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>assertCanCancelQuery
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assertCanCancelQuery() {
+  if (!this.canCancelQuery) {
+    throw new Error("Query cancelling not supported for this dialect");
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.cancelQuery" id="apidoc.element.ger.knex.Client.prototype.cancelQuery">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>cancelQuery
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function cancelQuery() {
+  throw new Error("Query cancelling not supported for this dialect");
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.columnBuilder" id="apidoc.element.ger.knex.Client.prototype.columnBuilder">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>columnBuilder
+        <span class="apidocSignatureSpan">(tableBuilder, type, args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function columnBuilder(tableBuilder, type, args) {
+  return new _columnbuilder2.default(this, tableBuilder, type, args);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.columnCompiler" id="apidoc.element.ger.knex.Client.prototype.columnCompiler">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>columnCompiler
+        <span class="apidocSignatureSpan">(tableBuilder, columnBuilder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function columnCompiler(tableBuilder, columnBuilder) {
+  return new _columncompiler2.default(this, tableBuilder, columnBuilder);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.database" id="apidoc.element.ger.knex.Client.prototype.database">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>database
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function database() {
+  return this.connectionSettings.database;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.destroy" id="apidoc.element.ger.knex.Client.prototype.destroy">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>destroy
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function destroy(callback) {
+  var _this6 = this;
+
+  var promise = new _bluebird2.default(function (resolver) {
+    if (!_this6.pool) {
+      return resolver();
+    }
+    _this6.pool.drain(function () {
+      _this6.pool.destroyAllNow(function () {
+        _this6.pool = undefined;
+        resolver();
+      });
+    });
+  });
+
+  // Allow either a callback or promise interface for destruction.
+  if (typeof callback === 'function') {
+    promise.asCallback(callback);
+  } else {
+    return promise;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.formatter" id="apidoc.element.ger.knex.Client.prototype.formatter">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>formatter
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function formatter() {
+  return new _formatter2.default(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.initializeDriver" id="apidoc.element.ger.knex.Client.prototype.initializeDriver">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>initializeDriver
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function initializeDriver() {
+  try {
+    this.driver = this._driver();
+  } catch (e) {
+    helpers.exit('Knex: run\n$ npm install ' + this.driverName + ' --save\n' + e.stack);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.initializePool" id="apidoc.element.ger.knex.Client.prototype.initializePool">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>initializePool
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function initializePool(config) {
+  if (this.pool) {
+    helpers.warn('The pool has already been initialized');
+    return;
+  }
+  this.pool = new _genericPool.Pool((0, _assign3.default)(this.poolDefaults(config.pool || {}), config.pool));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.poolDefaults" id="apidoc.element.ger.knex.Client.prototype.poolDefaults">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>poolDefaults
+        <span class="apidocSignatureSpan">(poolConfig)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function poolDefaults(poolConfig) {
+  var _this3 = this;
+
+  var name = this.dialect + ':' + this.driverName + ':' + this.__cid;
+  return {
+    min: 2,
+    max: 10,
+    name: name,
+    log: function log(str, level) {
+      if (level === 'info') {
+        debugPool(level.toUpperCase() + ' pool ' + name + ' - ' + str);
+      }
+    },
+
+    create: function create(callback) {
+      _this3.acquireRawConnection().tap(function (connection) {
+        connection.__knexUid = (0, _uniqueId3.default)('__knexUid');
+        if (poolConfig.afterCreate) {
+          return _bluebird2.default.promisify(poolConfig.afterCreate)(connection);
+        }
+      }).asCallback(callback);
+    },
+    destroy: function destroy(connection) {
+      if (poolConfig.beforeDestroy) {
+        helpers.warn('\n            beforeDestroy is deprecated, please open an issue if you use this\n            to discuss alternative
+ apis\n          ');
+        poolConfig.beforeDestroy(connection, function () {});
+      }
+      if (connection !== void 0) {
+        _this3.destroyRawConnection(connection);
+      }
+    },
+    validate: function validate(connection) {
+      if (connection.__knex__disposed) {
+        helpers.warn('Connection Error: ' + connection.__knex__disposed);
+        return false;
+      }
+      return _this3.validateConnection(connection);
+    }
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.prepBindings" id="apidoc.element.ger.knex.Client.prototype.prepBindings">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>prepBindings
+        <span class="apidocSignatureSpan">(bindings)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function prepBindings(bindings) {
+  return bindings;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.query" id="apidoc.element.ger.knex.Client.prototype.query">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>query
+        <span class="apidocSignatureSpan">(connection, obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function query(connection, obj) {
+  var _this2 = this;
+
+  if (typeof obj === 'string') obj = { sql: obj };
+  obj.bindings = this.prepBindings(obj.bindings);
+  debugQuery(obj.sql);
+  this.emit('query', (0, _assign3.default)({ __knexUid: connection.__knexUid }, obj));
+  debugBindings(obj.bindings);
+  return this._query(connection, obj).catch(function (err) {
+    err.message = _this2._formatQuery(obj.sql, obj.bindings) + ' - ' + err.message;
+    _this2.emit('query-error', err, (0, _assign3.default)({ __knexUid: connection.__knexUid }, obj));
+    throw err;
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.queryBuilder" id="apidoc.element.ger.knex.Client.prototype.queryBuilder">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>queryBuilder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function queryBuilder() {
+  return new _builder2.default(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.queryCompiler" id="apidoc.element.ger.knex.Client.prototype.queryCompiler">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>queryCompiler
+        <span class="apidocSignatureSpan">(builder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function queryCompiler(builder) {
+  return new _compiler2.default(this, builder);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.raw" id="apidoc.element.ger.knex.Client.prototype.raw">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>raw
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function raw() {
+  var _ref;
+
+  return (_ref = new _raw2.default(this)).set.apply(_ref, arguments);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.releaseConnection" id="apidoc.element.ger.knex.Client.prototype.releaseConnection">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>releaseConnection
+        <span class="apidocSignatureSpan">(connection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function releaseConnection(connection) {
+  var _this5 = this;
+
+  return new _bluebird2.default(function (resolver) {
+    debug('releasing connection to pool: %s', connection.__knexUid);
+    _this5.pool.release(connection);
+    resolver();
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.runner" id="apidoc.element.ger.knex.Client.prototype.runner">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>runner
+        <span class="apidocSignatureSpan">(connection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function runner(connection) {
+  return new _runner2.default(this, connection);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.schemaBuilder" id="apidoc.element.ger.knex.Client.prototype.schemaBuilder">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>schemaBuilder
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function schemaBuilder() {
+  return new _builder4.default(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.schemaCompiler" id="apidoc.element.ger.knex.Client.prototype.schemaCompiler">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>schemaCompiler
+        <span class="apidocSignatureSpan">(builder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function schemaCompiler(builder) {
+  return new _compiler4.default(this, builder);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.stream" id="apidoc.element.ger.knex.Client.prototype.stream">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>stream
+        <span class="apidocSignatureSpan">(connection, obj, _stream, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function stream(connection, obj, _stream, options) {
+  if (typeof obj === 'string') obj = { sql: obj };
+  this.emit('query', (0, _assign3.default)({ __knexUid: connection.__knexUid }, obj));
+  debugQuery(obj.sql);
+  obj.bindings = this.prepBindings(obj.bindings);
+  debugBindings(obj.bindings);
+  return this._stream(connection, obj, _stream, options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.tableBuilder" id="apidoc.element.ger.knex.Client.prototype.tableBuilder">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>tableBuilder
+        <span class="apidocSignatureSpan">(type, tableName, fn)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tableBuilder(type, tableName, fn) {
+  return new _tablebuilder2.default(this, type, tableName, fn);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.tableCompiler" id="apidoc.element.ger.knex.Client.prototype.tableCompiler">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>tableCompiler
+        <span class="apidocSignatureSpan">(tableBuilder)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function tableCompiler(tableBuilder) {
+  return new _tablecompiler2.default(this, tableBuilder);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.toString" id="apidoc.element.ger.knex.Client.prototype.toString">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() {
+  return '[object KnexClient]';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.transaction" id="apidoc.element.ger.knex.Client.prototype.transaction">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>transaction
+        <span class="apidocSignatureSpan">(container, config, outerTx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function transaction(container, config, outerTx) {
+  return new _transaction2.default(this, container, config, outerTx);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.validateConnection" id="apidoc.element.ger.knex.Client.prototype.validateConnection">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>validateConnection
+        <span class="apidocSignatureSpan">(connection)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validateConnection(connection) {
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.ger.knex.Client.prototype.wrapIdentifier" id="apidoc.element.ger.knex.Client.prototype.wrapIdentifier">
+        function <span class="apidocSignatureSpan">ger.knex.Client.prototype.</span>wrapIdentifier
+        <span class="apidocSignatureSpan">(value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrapIdentifier(value) {
+  return value !== '*' ? '"' + value.replace(/"/g, '""') + '"' : '*';
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
