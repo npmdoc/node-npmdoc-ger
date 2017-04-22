@@ -1,4 +1,7 @@
-# api documentation for  [ger (v0.0.99)](https://github.com/grahamjenson/ger#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ger.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ger) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ger.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ger)
+# npmdoc-ger
+
+#### api documentation for  [ger (v0.0.99)](https://github.com/grahamjenson/ger#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ger.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ger) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ger.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ger)
+
 #### Good Enough Recommendations (GER) is a collaborative filtering based recommendations engine built to be easy to use and integrate into your application.
 
 [![NPM](https://nodei.co/npm/ger.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ger)
@@ -70,7 +73,8 @@
         "test": "mocha"
     },
     "url": "https://github.com/grahamjenson/ger.git",
-    "version": "0.0.99"
+    "version": "0.0.99",
+    "bin": {}
 }
 ```
 
